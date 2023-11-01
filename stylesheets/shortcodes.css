@@ -22,26 +22,32 @@
   * flat-about-box
   * flat-Preloader
 */
+.themeflat-container{
+	position: relative;
+	margin: 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 1410px;
+	max-width: 100%;
 
+}
 /* Button
 -------------------------------------------------------------- */
 .flat-button {	
-	text-align: left;
+	text-align: center;
 	overflow: hidden;
 	position: relative;
 	display: inline-block;
-    font-family: "Lato", sans-serif;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #202020;
-    color: #202020;   
-    z-index: 1;
-    padding: 0 61px 0 24px;
-    letter-spacing: 1.3px;
-    line-height: 38px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #121212;  
+	background-color: #C3E92D;
+	border-radius: 6px; 
+    padding: 14px 40px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
     -webkit-transition: all 0.3s ease 0s;
        -moz-transition: all 0.3s ease 0s;
         -ms-transition: all 0.3s ease 0s;
@@ -49,91 +55,35 @@
             transition: all 0.3s ease 0s;
 }
 
-.flat-button.button-background {
-	background-color: #202020;
-	color: #fff;
+.flat-button:hover {
+	background-color: #121212;
+	color: #C3E92D;
 }
 
-.flat-button.button-background:after {
-	background-color: #414141;
+.btn-contact {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #121212;
+    background-color: #C3E92D;
+    border-radius: 44px;
+    padding: 12px 28px;
+    letter-spacing: 0.08em;
+    line-height: 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
-
-.flat-button.button-background:hover {
-	border-color: #00aeef;	
-}
-
-.flat-button.button-background:hover:before {
-	background-color: #00aeef;
-}
-
-.flat-button.button-background:hover:after {
-	background-color: #34c7fe;
-}
-
-.flat-button:after {
-	position: absolute;
-	right: 37px;
-	top: 0;
-	width: 1px;
-	height: 100%;	
-	background-color: #202020;
-	content: "";
-}
-
-.flat-button:before {
-	z-index: -1;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;	
-	content: "";
-	-webkit-transform: translate3d(-100%, 0, 0);
-			transform: translate3d(-100%, 0, 0);	
-	-webkit-transition: all 0.3s ease-out;
-	   -moz-transition: all 0.3s ease-out;
-	    -ms-transition: all 0.3s ease-out;
-	     -o-transition: all 0.3s ease-out;
-	        transition: all 0.3s ease-out;	
-}
-
-.flat-button:hover,
-.flat-button:hover i {
-	color: #fff;
-}
-
-.flat-button:hover:after {
-	background-color: #414141;
-}
-
-.flat-button:hover:before {		
-	background: #202020;
-	-webkit-transform: translate3d(0, 0, 0);
-			transform: translate3d(0, 0, 0);
-}	
-
-.flat-button i {
-	font-size: 20px;	
-	position: absolute;
-	right: 9px;
-	top: 9px;
-}
-
-.flat-button.border-white {
-	border-color: #fff;
-	color: #fff;
-}
-
-.flat-button.border-white:hover {
-	border-color: #202020;
-}
-
-.flat-button.border-white:hover:after {
-	background-color: #4b3e3e;
-}
-
-.flat-button.border-white:after {
-	background-color: #fff;
+.btn-contact:hover {
+	background-color: #FFF;
+    color: #121212;
 }
 
 /* title-box
