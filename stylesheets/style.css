@@ -670,7 +670,7 @@ input[type="color"],
     background: #fff;
     position: absolute;
     top: -4px;
-    right: 4px;
+    right: 0px;
     font-family: "Oswald", sans-serif;
     line-height: 9px;
     font-size: 9px;
@@ -678,6 +678,9 @@ input[type="color"],
     color: #121212;
     padding: 2px 4px;
     border-radius: 50px;
+}
+.language-wrap .cart {
+    position: relative;
 }
 
 
