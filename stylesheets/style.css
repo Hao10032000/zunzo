@@ -933,6 +933,13 @@ input[type="color"],
 	line-height: 55px;
 	padding: 0 50px;
 	color: #fff;
+	text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    display: block;
+    text-decoration: none;
 }
 
 #mainnav-mobi ul.sub-menu {
@@ -1085,6 +1092,9 @@ input[type="color"],
 -------------------------------------------------------------- */
 .main-content {
 	padding: 120px 0;
+}
+.widget-blog-content {
+    padding-right: 43px;
 }
 
 .blog-posts article.entry.format-standard {
@@ -1701,6 +1711,7 @@ input[type="email"]:hover {
 .widget-aboutme .textwidget .profile {
 	margin-bottom: 21px;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .sidebar .widget .widget-title {
@@ -2251,7 +2262,7 @@ footer {
 	line-height: normal;
 	font-weight: 500;
 	color: #fff;
-	margin-bottom: 18px;
+	margin-bottom: 16px;
 	text-transform: uppercase;
 }
 
@@ -2261,8 +2272,8 @@ footer {
 	line-height: normal;
 	font-weight: 400;
 	color: #E9E9E9;
-	margin-bottom: 14px;
-	display: block;
+	margin-bottom: 11px;
+	display: inline-block;
 	text-decoration: none;
 	position: relative;
 }
@@ -2389,7 +2400,7 @@ footer {
 .footer-bottom ul.link-footer-bottom {
     display: flex;
     gap: 24px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
 }
