@@ -110,6 +110,11 @@
             })            
         }   
     }
+    $(document).ready(function() {
+        $(".search a").click(function() {
+           $(".search .widget.widget-search").toggle();
+         });
+    });//show-search
 
     var scrollBtn = function () {
         $('.flat-scroll-btn').on( 'click', function() {

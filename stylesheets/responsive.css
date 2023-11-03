@@ -62,7 +62,7 @@
 		padding: 0 10px 0 10px;
 	}
 
-	.header-inner .language-wrap,
+	.header-inner .header-right,
 	.header.style2 .btn-menu-active,
 	.setting-wrap {
 		display: none;
@@ -75,7 +75,7 @@
 
 /* Smaller than standard 1200 */
 @media only screen and (max-width: 1199px) {
-	.header-inner .language-wrap,
+	.header-inner .header-right,
 	.header.style2 .btn-menu-active,
 	.setting-wrap {
 		display: none;
@@ -114,7 +114,7 @@
 	}
 
 	#mainnav,
-	.header-inner .language-wrap {
+	.header-inner .header-right {
 		display: none;
 	}
 
