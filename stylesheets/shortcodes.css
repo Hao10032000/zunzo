@@ -36,8 +36,9 @@
 	--critical: #DB4444;
 	--linear-one: #E9E9E9;
 
-	
   }
+/* Container
+------------------------------------------------------------------*/
 .themeflat-container{
 	position: relative;
 	margin: 0 auto;
@@ -46,6 +47,13 @@
 	width: 1440px;
 	max-width: 100%;
 
+}
+p.post{
+	font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black);
+	line-height: 28px;
 }
 /* Button
 -------------------------------------------------------------- */
