@@ -367,9 +367,6 @@
 		float: none;
 	}
 
-	.comment-post .children {
-		margin-left: 30px;
-	}
 
 	.flat-portfolio.v4 .item {
 		padding: 0 0 30px 0;
@@ -386,21 +383,12 @@
 		text-align: center;
 	}
 
-	.go-top,
-	.flat-portfolio .item .link,
-	.switcher-container h2 a {
-		width: 33px;
-		height: 33px;
-		line-height: 33px;
-	}
 
 	.flat-portfolio .item .link {
 		margin-left: -16px;
 	}
 
-	.go-top.style1 {
-		top: -16px;
-	}
+	
 
 	.switcher-container h2 a i,
 	.go-top i {
@@ -442,6 +430,12 @@
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
+	.comment-form .email-container {
+		margin-bottom: 20px;
+	}
+	.comment-list-wrap ul.children li {
+		padding-left: 30px;
+	}
 	.widget-blog-content {
 		padding-right: 15px;
 	}
@@ -507,10 +501,6 @@
 		font-size: 40px;
 	}
 
-	blockquote .wrap-text {
-		padding: 15px;
-	}
-
 	.flat-latest-blog .entry .main-post, 
 	.blog-posts.v1 .entry .main-post, 
 	.blog-single .entry .main-post {
@@ -521,12 +511,6 @@
 	.blog-single .entry .feature-post .type-post {
 		left: 10px;
     	top: 71%;
-	}
-
-	.entry .entry-title,
-	.comment-post h4.comment-title {
-		font-size: 13px;
-		padding-top: 15px;
 	}
 
 	.sidebar {
@@ -547,10 +531,6 @@
 	blockquote .blockqoute-text,
 	.comment-list-wrap {
 		margin-bottom: 0;
-	}
-
-	blockquote .wrap-text {
-		border: 0;
 	}
 
 	.post-wrap,
@@ -596,6 +576,14 @@
 
 /* Mobile Portrait Size */
 @media only screen and (max-width: 479px) {
+	.blog-content-single blockquote.alignleft i {
+		margin-right: 0px;
+		margin-bottom: 20px;
+		display: block;
+	}
+	.blog-content-single blockquote.alignleft {
+	display: block;
+	}
 	.flat-latest-blog .entry .feature-post .type-post {
 		top: 80%;
 	}	
@@ -603,6 +591,30 @@
 	.flat-portfolio.v2 .item,
 	.flat-portfolio.v3 .item {
 		width: 100%;
+	}
+	.entry-widget-blog .main-post h2.entry-title {
+		font-size: 25px;
+		line-height: 30px;
+	}
+	.widget-tf-blog .entry-item {
+		display: block;
+	}
+	.widget-tf-blog .entry-item .feature-post {
+		width: 100%;
+	
+	}
+	.widget-tf-blog .entry-item .main-post {
+		width: 100%;
+		padding-top: 22px;
+		padding-left: 0px;
+	}
+	.widget-tf-blog .entry-widget-blog .main-post {
+		bottom: 20px;
+		left: 20px;
+		right: 20px;
+	}
+	.widget-tf-blog h2.title-blog {
+		font-size: 30px;
 	}
 }
 

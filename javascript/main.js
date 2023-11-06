@@ -111,23 +111,57 @@
         }
     }
     $(document).ready(function () {
-        $(".search a").click(function () {
-            $(".search .widget.widget-search").toggle();
+        $(".search > a").click(function () {
+            $(".search .widget-search").show();
+            $(".search > a svg").hide();
+            $(".search > a").toggleClass('active-search');
         });
+        // $(document).on('click', function (e) {
+        //     var clickID = e.target.class; if ((clickID !== 'a111')) {
+        //         $('.show-search').removeClass('active-search');
+        //     }
+        // });
     });//show-search
-    
-    $('.cart a').on('click', function () {
+
+    $('.minicar-overlay').on('click', function () {
         $(this).closest('#header').find('.nav-shop-cart').toggleClass('active');
+        $(this).closest('#header').find('.minicar-overlay').toggleClass('active-minicart');
     });
-    $('.minicart-close').on('click', function () {
+    $('.cart > a').on('click', function () {
         $(this).closest('#header').find('.nav-shop-cart').toggleClass('active');
-    });
-    $('.cart a').on('click', function () {
         $(this).closest('#header').find('.minicar-overlay').toggleClass('active-minicart');
     });
     $('.minicart-close').on('click', function () {
+        $(this).closest('#header').find('.nav-shop-cart').toggleClass('active');
         $(this).closest('#header').find('.minicar-overlay').toggleClass('active-minicart');
     });//toogle cart
+
+    //Time
+    var timeMinutes = 10;
+    var timeSeconds = timeMinutes * 60;
+    var timer = document.getElementById('timer-sell-out');
+
+    function startTimer() {
+        timeSeconds--;
+        var minutes = Math.floor(timeSeconds / 60);
+        var seconds = timeSeconds % 60;
+
+        if (timeSeconds < 0) {
+            timer.textContent = '00:00';
+            clearInterval(timerInterval);
+            return;
+        }
+        if (minutes < 10) {
+            minutes = '0' + minutes;
+        }
+        if (seconds < 10) {
+            seconds = '0' + seconds;
+        }
+        timer.textContent = minutes + ':' + seconds;
+    }
+
+    var timerInterval = setInterval(startTimer, 1000);
+    //time
 
     var scrollBtn = function () {
         $('.flat-scroll-btn').on('click', function () {
