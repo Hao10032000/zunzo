@@ -109,6 +109,17 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
+	.widget-tf-blog .widget-blog-left {
+		padding-right: 15px;
+		margin-bottom: 40px;
+	}
+	.widget-tf-blog .widget-blog-right .feature-post img {
+		width: 100%;
+	}
+	
+	.widget-tf-blog .widget-blog-right {
+		padding-left: 15px;
+	}
 	.btn-menu {
 		display: block ;
 	}
@@ -138,13 +149,13 @@
 	.home2 .flat-row.row-portfolio,
 	.home2 .flat-row.row-pricing,
 	.home2 .flat-row.row-testimonials {
-		padding: 60px 0;
+		padding: 60px 0px;
 	}
 
 	.flat-row.row-progress,
 	.home2 .flat-row.row-progress,
 	.home3 .flat-row.row-portfolio {
-		padding: 60px 0 0;
+		padding: 60px 0px;
 	}
 
 	.padding-left61px,
@@ -432,7 +443,7 @@
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
 	.widget-blog-content {
-		padding-right: 0px;
+		padding-right: 15px;
 	}
 	.copyright p {
 		text-align: center;
@@ -523,7 +534,10 @@
 	}
 
 	.main-content {
-		padding: 60px 0 0;
+		padding: 60px 0px;
+	}
+	.blog-content-single .widget-tf-blog {
+		margin-top: 60px;
 	}
 
 	footer {
