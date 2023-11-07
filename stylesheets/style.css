@@ -1716,6 +1716,16 @@ span.pull-right {
 
 
 /* widget search */
+.tf-banner {
+    position: relative;
+    overflow: hidden;
+}
+.search a.active-search svg {
+	display: none;
+}
+.header-right .search .widget-search.active {
+	display: block;
+}
 .widget.widget-search #searchform {
 	width: 100%;
 	position: relative;

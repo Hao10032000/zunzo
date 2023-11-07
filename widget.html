@@ -32,6 +32,8 @@
     <!-- Animation Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
 
+    <link rel="stylesheet" type="text/css" href="stylesheets/swiper-bundle.min.css">
+
     <!-- Favicon and touch icons  -->
     <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
     <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
@@ -149,7 +151,8 @@
                                 <div class="minicar-body">
                                     <div class="time">
                                         <img src="images/fire.png" alt="">
-                                        <p>Your cart will expire in <span id="timer-sell-out">04:48</span> minutes! Please checkout now
+                                        <p>Your cart will expire in <span id="timer-sell-out">04:48</span> minutes!
+                                            Please checkout now
                                             before your items sell
                                             out!</p>
                                     </div>
@@ -220,7 +223,7 @@
                                                 <span class="quantity">1 × $60.00 </span>
                                             </div>
                                         </li>
-                                       
+
                                     </ul>
                                 </div>
                                 <div class="minicar-footer">
@@ -298,291 +301,325 @@
         </div>
     </header><!-- /.header -->
 
-    <!-- Page Title -->
-    <div class="page-title text-left">
-        <div class="themeflat-container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="page-title-heading">
-                        <h1 class="title">latest news</h1>
-                    </div><!-- /.page-title-captions -->
-                    <div class="breadcrumbs">
-                        <ul>
-                            <li><a href="#">Homepage</a></li>
-                            <i class="icon-Arrow---Right-2"></i>
-                            <li><a href="#">Latest News</a></li>
-                        </ul>
-                    </div><!-- /.breadcrumbs -->
-
-                </div><!-- /.col-md-12 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.page-title -->
-
-    <!-- Blog Posts -->
-    <section class="main-content blog-posts">
-        <div class="themeflat-container">
-            <div class="row">
-                <div class="col-md-9 widget-blog-content">
-                    <div class="post-wrap">
-                        <article class="entry format-standard">
-                            <div class="feature-post">
-                                <img src="images/blog/blog1.jpg" alt="image">
-                            </div><!-- /.feature-post -->
-
-                            <div class="main-post">
-                                <div class="tag">
-                                    <a href="#">Running</a>
-                                </div>
-                                <h2 class="entry-title"><a href="#">The Science Behind Running: How It Benefits Your
-                                        Body and Mind</a>
-                                </h2>
-                                <div class="entry-meta">by
-                                    <span class="author line"><a href="#">Maverick Nguyen</a></span>
-                                    <span class="date line"><a href="#">Oct 12, 2023</a></span>
-                                    <span class="comment">
-                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_7503_84)">
-                                                <path
-                                                    d="M6.71063 14.25L3 17.25V5.25C3 5.05109 3.07902 4.86032 3.21967 4.71967C3.36032 4.57902 3.55109 4.5 3.75 4.5H15.75C15.9489 4.5 16.1397 4.57902 16.2803 4.71967C16.421 4.86032 16.5 5.05109 16.5 5.25V13.5C16.5 13.6989 16.421 13.8897 16.2803 14.0303C16.1397 14.171 15.9489 14.25 15.75 14.25H6.71063Z"
-                                                    stroke="#121212" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M7.5 14.25V18C7.5 18.1989 7.57902 18.3897 7.71967 18.5303C7.86032 18.671 8.05109 18.75 8.25 18.75H17.2894L21 21.75V9.75C21 9.55109 20.921 9.36032 20.7803 9.21967C20.6397 9.07902 20.4489 9 20.25 9H16.5"
-                                                    stroke="#121212" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_7503_84">
-                                                    <rect width="24" height="24" fill="white"
-                                                        transform="translate(0 0.75)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-
-                                        02 comments
-                                    </span>
-                                </div>
-                                <a class="more-link" href="blog-single.html">Read More</a>
-                                <!-- /.entry-meta -->
-                            </div><!-- /.main-post -->
-                        </article>
-                        <article class="entry format-standard">
-                            <div class="feature-post">
-                                <img src="images/blog/blog2.jpg" alt="image">
-                            </div><!-- /.feature-post -->
-
-                            <div class="main-post">
-                                <div class="tag">
-                                    <a href="#">Running</a>
-                                </div>
-                                <h2 class="entry-title"><a href="#">The Best Running Shoes for Every Terrain: Find Your
-                                        Perfect Fit</a>
-                                </h2>
-                                <div class="entry-meta">by
-                                    <span class="author line"><a href="#">Maverick Nguyen</a></span>
-                                    <span class="date line"><a href="#">Oct 12, 2023</a></span>
-                                    <span class="comment">
-                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_7503_84)">
-                                                <path
-                                                    d="M6.71063 14.25L3 17.25V5.25C3 5.05109 3.07902 4.86032 3.21967 4.71967C3.36032 4.57902 3.55109 4.5 3.75 4.5H15.75C15.9489 4.5 16.1397 4.57902 16.2803 4.71967C16.421 4.86032 16.5 5.05109 16.5 5.25V13.5C16.5 13.6989 16.421 13.8897 16.2803 14.0303C16.1397 14.171 15.9489 14.25 15.75 14.25H6.71063Z"
-                                                    stroke="#121212" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M7.5 14.25V18C7.5 18.1989 7.57902 18.3897 7.71967 18.5303C7.86032 18.671 8.05109 18.75 8.25 18.75H17.2894L21 21.75V9.75C21 9.55109 20.921 9.36032 20.7803 9.21967C20.6397 9.07902 20.4489 9 20.25 9H16.5"
-                                                    stroke="#121212" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_7503_84">
-                                                    <rect width="24" height="24" fill="white"
-                                                        transform="translate(0 0.75)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-
-                                        02 comments
-                                    </span>
-                                </div>
-                                <a class="more-link" href="blog-single.html">Read More</a>
-                                <!-- /.entry-meta -->
-                            </div><!-- /.main-post -->
-                        </article>
-                        <article class="entry format-standard">
-                            <div class="feature-post">
-                                <img src="images/blog/blog3.jpg" alt="image">
-                            </div><!-- /.feature-post -->
-
-                            <div class="main-post">
-                                <div class="tag">
-                                    <a href="#">Running</a>
-                                </div>
-                                <h2 class="entry-title"><a href="#">From Couch to 5K: A Step-by-Step Guide to Becoming a
-                                        Runner</a>
-                                </h2>
-                                <div class="entry-meta">by
-                                    <span class="author line"><a href="#">Maverick Nguyen</a></span>
-                                    <span class="date line"><a href="#">Oct 12, 2023</a></span>
-                                    <span class="comment">
-                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_7503_84)">
-                                                <path
-                                                    d="M6.71063 14.25L3 17.25V5.25C3 5.05109 3.07902 4.86032 3.21967 4.71967C3.36032 4.57902 3.55109 4.5 3.75 4.5H15.75C15.9489 4.5 16.1397 4.57902 16.2803 4.71967C16.421 4.86032 16.5 5.05109 16.5 5.25V13.5C16.5 13.6989 16.421 13.8897 16.2803 14.0303C16.1397 14.171 15.9489 14.25 15.75 14.25H6.71063Z"
-                                                    stroke="#121212" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M7.5 14.25V18C7.5 18.1989 7.57902 18.3897 7.71967 18.5303C7.86032 18.671 8.05109 18.75 8.25 18.75H17.2894L21 21.75V9.75C21 9.55109 20.921 9.36032 20.7803 9.21967C20.6397 9.07902 20.4489 9 20.25 9H16.5"
-                                                    stroke="#121212" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_7503_84">
-                                                    <rect width="24" height="24" fill="white"
-                                                        transform="translate(0 0.75)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-
-                                        02 comments
-                                    </span>
-                                </div>
-                                <a class="more-link" href="blog-single.html">Read More</a>
-                                <!-- /.entry-meta -->
-                            </div><!-- /.main-post -->
-                        </article>
-                        <div class="blog-pagination">
-                            <ul class="flat-pagination clearfix">
-                                <li><a href="#">1</a></li>
-                                <li class="active">2</li>
-                                <li><a href="#"><i class="icon-Arrow---Right-2"></i></a></li>
-                            </ul>
-                        </div><!-- /.blog-pagination -->
-                    </div>
-                </div><!-- /.col-md-9 -->
-                <div class="col-md-3">
-                    <div class="sidebar">
-                        <div class="widget widget-text widget-aboutme">
-                            <div class="textwidget">
-                                <div class="profile">
-                                    <div class="imgae-profile">
-                                        <img src="images/blog/profile-blog.png" alt="images">
-                                    </div>
-                                    <div class="content-profile">
-                                        <span>Maverick Nguyen</span>
-                                        <p>200 Follower</p>
-                                        <button class="flat-button">Follow</button>
-                                    </div>
-                                </div>
-                                <p>Maverick Nguyen is a writer who draws. He’s the Bestselling author of “Number of The
-                                    Year”. Donec vitae tortor efficitur</p>
-                                <ul class="flat-socials">
+    <!-- Widget-slide -->
+    <div class="tf-slider-widget swiper mySwiper">
+        <div class="tf-slider swiper-wrapper">
+            <div class="tf-banner swiper-slide">
+                <div class="image-slider">
+                    <img src="images/slides/slide1.jpg" alt="image" />
+                    <div class="overlay"></div>
+                </div>
+                <div class="themeflat-container">
+                    <div class="slide-item">
+                        <div class="silde-content">
+                            <span class="flat-sub-slider">SALE UP TO 50% OFF!</span>
+                            <h1 class="flat-title-slider">Empowering Your<br> Fitness Journey
+                            </h1>
+                            <p class="flat-description-slider">The platform that turns aspirations into
+                                accomplishments. Join
+                                now
+                                <br>
+                                and unleash your potential in the world of fitness and wellness.
+                            </p>
+                            <a href="#" class="flat-button">Join our club</a>
+                        </div>
+                        <div class="box-events-slide">
+                            <span class="new-event">new Event </span>
+                            <img src="images/evtent/new-event.jpg" alt="" class="new-event">
+                            <div class="content-event">
+                                <h2 class="title-event"><a href="" class="">marathon event 2023</a></h2>
+                                <ul>
                                     <li>
-                                        <a href="#"><i class="icon-twitter"></i></a>
+                                        <span class="icon-new">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.8333 1.07692H11.0833V0.538462C11.0833 0.395653 11.0219 0.258693 10.9125 0.157712C10.8031 0.0567306 10.6547 0 10.5 0C10.3453 0 10.1969 0.0567306 10.0875 0.157712C9.97812 0.258693 9.91667 0.395653 9.91667 0.538462V1.07692H4.08333V0.538462C4.08333 0.395653 4.02187 0.258693 3.91248 0.157712C3.80308 0.0567306 3.65471 0 3.5 0C3.34529 0 3.19692 0.0567306 3.08752 0.157712C2.97812 0.258693 2.91667 0.395653 2.91667 0.538462V1.07692H1.16667C0.857247 1.07692 0.560501 1.19038 0.341709 1.39235C0.122916 1.59431 0 1.86823 0 2.15385V12.9231C0 13.2087 0.122916 13.4826 0.341709 13.6846C0.560501 13.8865 0.857247 14 1.16667 14H12.8333C13.1428 14 13.4395 13.8865 13.6583 13.6846C13.8771 13.4826 14 13.2087 14 12.9231V2.15385C14 1.86823 13.8771 1.59431 13.6583 1.39235C13.4395 1.19038 13.1428 1.07692 12.8333 1.07692ZM12.8333 4.30769H1.16667V2.15385H2.91667V2.69231C2.91667 2.83512 2.97812 2.97208 3.08752 3.07306C3.19692 3.17404 3.34529 3.23077 3.5 3.23077C3.65471 3.23077 3.80308 3.17404 3.91248 3.07306C4.02187 2.97208 4.08333 2.83512 4.08333 2.69231V2.15385H9.91667V2.69231C9.91667 2.83512 9.97812 2.97208 10.0875 3.07306C10.1969 3.17404 10.3453 3.23077 10.5 3.23077C10.6547 3.23077 10.8031 3.17404 10.9125 3.07306C11.0219 2.97208 11.0833 2.83512 11.0833 2.69231V2.15385H12.8333V4.30769Z"
+                                                    fill="#C3E92D" />
+                                            </svg>
+                                        </span>
+                                        <a href="">oct 20, 2023</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="icon-dribbble"></i></a>
+                                        <span class="icon-new">
+                                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.85714 2.28571C5.50093 2.28571 4.17517 2.68788 3.04752 3.44135C1.91987 4.19482 1.04097 5.26576 0.521972 6.51874C0.0029711 7.77172 -0.132823 9.15046 0.131761 10.4806C0.396345 11.8108 1.04942 13.0326 2.00841 13.9916C2.9674 14.9506 4.18923 15.6037 5.51938 15.8682C6.84954 16.1328 8.22828 15.997 9.48126 15.478C10.7342 14.959 11.8052 14.0801 12.5586 12.9525C13.3121 11.8248 13.7143 10.4991 13.7143 9.14286C13.7122 7.32487 12.9891 5.58193 11.7036 4.29642C10.4181 3.01091 8.67513 2.28779 6.85714 2.28571ZM10.1186 6.69L7.26143 9.54714C7.20834 9.60023 7.14531 9.64235 7.07594 9.67108C7.00657 9.69981 6.93223 9.7146 6.85714 9.7146C6.78206 9.7146 6.70771 9.69981 6.63835 9.67108C6.56898 9.64235 6.50595 9.60023 6.45286 9.54714C6.39977 9.49405 6.35765 9.43102 6.32892 9.36165C6.30019 9.29229 6.2854 9.21794 6.2854 9.14286C6.2854 9.06777 6.30019 8.99343 6.32892 8.92406C6.35765 8.85469 6.39977 8.79166 6.45286 8.73857L9.31 5.88143C9.36309 5.82834 9.42612 5.78622 9.49549 5.75749C9.56486 5.72876 9.6392 5.71397 9.71429 5.71397C9.78937 5.71397 9.86372 5.72876 9.93308 5.75749C10.0025 5.78622 10.0655 5.82834 10.1186 5.88143C10.1717 5.93452 10.2138 5.99755 10.2425 6.06692C10.2712 6.13628 10.286 6.21063 10.286 6.28571C10.286 6.3608 10.2712 6.43514 10.2425 6.50451C10.2138 6.57388 10.1717 6.63691 10.1186 6.69ZM4.57143 0.571428C4.57143 0.419876 4.63163 0.274531 4.7388 0.167368C4.84596 0.0602039 4.99131 0 5.14286 0H8.57143C8.72298 0 8.86833 0.0602039 8.97549 0.167368C9.08265 0.274531 9.14286 0.419876 9.14286 0.571428C9.14286 0.722981 9.08265 0.868326 8.97549 0.975489C8.86833 1.08265 8.72298 1.14286 8.57143 1.14286H5.14286C4.99131 1.14286 4.84596 1.08265 4.7388 0.975489C4.63163 0.868326 4.57143 0.722981 4.57143 0.571428Z"
+                                                    fill="#C3E92D" />
+                                            </svg>
+                                        </span>
+                                        <a href="">Start 06:00 AM - Until Finish</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="icon-behance"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="icon-pinterest"></i></a>
+                                        <span class="icon-new">
+                                            <svg width="13" height="16" viewBox="0 0 13 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.28578 0C4.61927 0.00189054 3.02155 0.664747 1.84315 1.84315C0.664747 3.02155 0.00189054 4.61927 0 6.28578C0 11.6644 5.71434 15.7266 5.95792 15.8966C6.054 15.9639 6.16847 16 6.28578 16C6.40309 16 6.51756 15.9639 6.61364 15.8966C6.85721 15.7266 12.5716 11.6644 12.5716 6.28578C12.5697 4.61927 11.9068 3.02155 10.7284 1.84315C9.55 0.664747 7.95229 0.00189054 6.28578 0ZM6.28578 4.00004C6.73785 4.00004 7.17978 4.1341 7.55567 4.38526C7.93155 4.63642 8.22452 4.9934 8.39752 5.41106C8.57053 5.82873 8.61579 6.28831 8.5276 6.7317C8.4394 7.17509 8.2217 7.58237 7.90204 7.90204C7.58237 8.2217 7.17509 8.4394 6.7317 8.5276C6.28831 8.61579 5.82873 8.57053 5.41106 8.39752C4.9934 8.22452 4.63642 7.93155 4.38526 7.55567C4.1341 7.17978 4.00004 6.73785 4.00004 6.28578C4.00004 5.67956 4.24086 5.09818 4.66952 4.66952C5.09818 4.24086 5.67956 4.00004 6.28578 4.00004Z"
+                                                    fill="#C3E92D" />
+                                            </svg>
+                                        </span>
+                                        <a href="">710 1st St. Easton, PA 18042 | Chester County</a>
                                     </li>
                                 </ul>
-                            </div><!-- /.textwidget -->
-                        </div><!-- /.widget-text -->
-                        <div class="widget widget-search">
-                            <form action="#" id="searchform" method="get">
-                                <div>
-                                    <input type="text" id="s" class="sss" placeholder="Search">
-                                    <button aria-label="Search" class="wp-element-button" type="submit"><i
-                                            class="icon-U"></i></button>
-                                </div>
-
-                            </form>
-                        </div><!-- /.widget-search -->
-
-                        <div class="widget widget-categories">
-                            <h5 class="widget-title">Category</h5>
-                            <ul>
-                                <li><a href="#"><i class="icon-Arrow---Right-2"></i>Action<span
-                                            class="pull-right">1</span></a></li>
-                                <li><a href="#"><i class="icon-Arrow---Right-2"></i>adventure<span
-                                            class="pull-right">2</span></a></li>
-                                <li><a href="#"><i class="icon-Arrow---Right-2"></i>console<span
-                                            class="pull-right">3</span></a></li>
-                                <li><a href="#"><i class="icon-Arrow---Right-2"></i>esport<span
-                                            class="pull-right">4</span></a></li>
-                                <li><a href="#"><i class="icon-Arrow---Right-2"></i>racing<span
-                                            class="pull-right">5</span></a></li>
-                            </ul>
-                        </div><!-- /.widget-categories -->
-                        <div class="widget widget-tags">
-                            <h5 class="widget-title">Popular Tags</h5>
-                            <div class="tag">
-                                <a href="#">Race</a>
-                                <a href="#">Running</a>
-                                <a href="#">Running</a>
-                                <a href="#">Training</a>
-                                <a href="#">Events</a>
                             </div>
-                        </div><!-- /.widget-tags -->
 
-                        <div class="widget widget-popular-news">
-                            <h5 class="widget-title">Recent Posts</h5>
-                            <ul class="popular-news clearfix">
-                                <li>
-                                    <div class="thumb">
-                                        <img src="images/blog/post1.jpg" alt="image">
-                                    </div>
-                                    <div class="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tf-banner swiper-slide">
+                <div class="image-slider">
+                    <img src="images/slides/slide2.jpg" alt="image" />
+                    <div class="overlay"></div>
+                </div>
+                <div class="themeflat-container">
+                    <div class="slide-item">
+                        <div class="silde-content">
+                            <span class="flat-sub-slider">SALE UP TO 50% OFF!</span>
+                            <h1 class="flat-title-slider">Empowering Your<br> Fitness Journey
+                            </h1>
+                            <p class="flat-description-slider">The platform that turns aspirations into
+                                accomplishments. Join
+                                now
+                                <br>
+                                and unleash your potential in the world of fitness and wellness.
+                            </p>
+                            <a href="#" class="flat-button">Join our club</a>
+                        </div>
+                        <div class="box-events-slide">
+                            <span class="new-event">new Event </span>
+                            <img src="images/evtent/new-event.jpg" alt="" class="new-event">
+                            <div class="content-event">
+                                <h2 class="title-event"><a href="" class="">marathon event 2023</a></h2>
+                                <ul>
+                                    <li>
+                                        <span class="icon-new">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.8333 1.07692H11.0833V0.538462C11.0833 0.395653 11.0219 0.258693 10.9125 0.157712C10.8031 0.0567306 10.6547 0 10.5 0C10.3453 0 10.1969 0.0567306 10.0875 0.157712C9.97812 0.258693 9.91667 0.395653 9.91667 0.538462V1.07692H4.08333V0.538462C4.08333 0.395653 4.02187 0.258693 3.91248 0.157712C3.80308 0.0567306 3.65471 0 3.5 0C3.34529 0 3.19692 0.0567306 3.08752 0.157712C2.97812 0.258693 2.91667 0.395653 2.91667 0.538462V1.07692H1.16667C0.857247 1.07692 0.560501 1.19038 0.341709 1.39235C0.122916 1.59431 0 1.86823 0 2.15385V12.9231C0 13.2087 0.122916 13.4826 0.341709 13.6846C0.560501 13.8865 0.857247 14 1.16667 14H12.8333C13.1428 14 13.4395 13.8865 13.6583 13.6846C13.8771 13.4826 14 13.2087 14 12.9231V2.15385C14 1.86823 13.8771 1.59431 13.6583 1.39235C13.4395 1.19038 13.1428 1.07692 12.8333 1.07692ZM12.8333 4.30769H1.16667V2.15385H2.91667V2.69231C2.91667 2.83512 2.97812 2.97208 3.08752 3.07306C3.19692 3.17404 3.34529 3.23077 3.5 3.23077C3.65471 3.23077 3.80308 3.17404 3.91248 3.07306C4.02187 2.97208 4.08333 2.83512 4.08333 2.69231V2.15385H9.91667V2.69231C9.91667 2.83512 9.97812 2.97208 10.0875 3.07306C10.1969 3.17404 10.3453 3.23077 10.5 3.23077C10.6547 3.23077 10.8031 3.17404 10.9125 3.07306C11.0219 2.97208 11.0833 2.83512 11.0833 2.69231V2.15385H12.8333V4.30769Z"
+                                                    fill="#C3E92D" />
+                                            </svg>
+                                        </span>
+                                        <a href="">oct 20, 2023</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon-new">
+                                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.85714 2.28571C5.50093 2.28571 4.17517 2.68788 3.04752 3.44135C1.91987 4.19482 1.04097 5.26576 0.521972 6.51874C0.0029711 7.77172 -0.132823 9.15046 0.131761 10.4806C0.396345 11.8108 1.04942 13.0326 2.00841 13.9916C2.9674 14.9506 4.18923 15.6037 5.51938 15.8682C6.84954 16.1328 8.22828 15.997 9.48126 15.478C10.7342 14.959 11.8052 14.0801 12.5586 12.9525C13.3121 11.8248 13.7143 10.4991 13.7143 9.14286C13.7122 7.32487 12.9891 5.58193 11.7036 4.29642C10.4181 3.01091 8.67513 2.28779 6.85714 2.28571ZM10.1186 6.69L7.26143 9.54714C7.20834 9.60023 7.14531 9.64235 7.07594 9.67108C7.00657 9.69981 6.93223 9.7146 6.85714 9.7146C6.78206 9.7146 6.70771 9.69981 6.63835 9.67108C6.56898 9.64235 6.50595 9.60023 6.45286 9.54714C6.39977 9.49405 6.35765 9.43102 6.32892 9.36165C6.30019 9.29229 6.2854 9.21794 6.2854 9.14286C6.2854 9.06777 6.30019 8.99343 6.32892 8.92406C6.35765 8.85469 6.39977 8.79166 6.45286 8.73857L9.31 5.88143C9.36309 5.82834 9.42612 5.78622 9.49549 5.75749C9.56486 5.72876 9.6392 5.71397 9.71429 5.71397C9.78937 5.71397 9.86372 5.72876 9.93308 5.75749C10.0025 5.78622 10.0655 5.82834 10.1186 5.88143C10.1717 5.93452 10.2138 5.99755 10.2425 6.06692C10.2712 6.13628 10.286 6.21063 10.286 6.28571C10.286 6.3608 10.2712 6.43514 10.2425 6.50451C10.2138 6.57388 10.1717 6.63691 10.1186 6.69ZM4.57143 0.571428C4.57143 0.419876 4.63163 0.274531 4.7388 0.167368C4.84596 0.0602039 4.99131 0 5.14286 0H8.57143C8.72298 0 8.86833 0.0602039 8.97549 0.167368C9.08265 0.274531 9.14286 0.419876 9.14286 0.571428C9.14286 0.722981 9.08265 0.868326 8.97549 0.975489C8.86833 1.08265 8.72298 1.14286 8.57143 1.14286H5.14286C4.99131 1.14286 4.84596 1.08265 4.7388 0.975489C4.63163 0.868326 4.57143 0.722981 4.57143 0.571428Z"
+                                                    fill="#C3E92D" />
+                                            </svg>
+                                        </span>
+                                        <a href="">Start 06:00 AM - Until Finish</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon-new">
+                                            <svg width="13" height="16" viewBox="0 0 13 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.28578 0C4.61927 0.00189054 3.02155 0.664747 1.84315 1.84315C0.664747 3.02155 0.00189054 4.61927 0 6.28578C0 11.6644 5.71434 15.7266 5.95792 15.8966C6.054 15.9639 6.16847 16 6.28578 16C6.40309 16 6.51756 15.9639 6.61364 15.8966C6.85721 15.7266 12.5716 11.6644 12.5716 6.28578C12.5697 4.61927 11.9068 3.02155 10.7284 1.84315C9.55 0.664747 7.95229 0.00189054 6.28578 0ZM6.28578 4.00004C6.73785 4.00004 7.17978 4.1341 7.55567 4.38526C7.93155 4.63642 8.22452 4.9934 8.39752 5.41106C8.57053 5.82873 8.61579 6.28831 8.5276 6.7317C8.4394 7.17509 8.2217 7.58237 7.90204 7.90204C7.58237 8.2217 7.17509 8.4394 6.7317 8.5276C6.28831 8.61579 5.82873 8.57053 5.41106 8.39752C4.9934 8.22452 4.63642 7.93155 4.38526 7.55567C4.1341 7.17978 4.00004 6.73785 4.00004 6.28578C4.00004 5.67956 4.24086 5.09818 4.66952 4.66952C5.09818 4.24086 5.67956 4.00004 6.28578 4.00004Z"
+                                                    fill="#C3E92D" />
+                                            </svg>
+                                        </span>
+                                        <a href="">710 1st St. Easton, PA 18042 | Chester County</a>
+                                    </li>
+                                </ul>
+                            </div>
 
-                                        <h6>
-                                            <a href="#">10 Effective Tips to Improve Your Running Form</a>
-                                        </h6>
-                                        <p class="date-popular-news">Oct 12, 2023</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <img src="images/blog/post2.jpg" alt="image">
-                                    </div>
-                                    <div class="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tf-banner swiper-slide">
+                <div class="image-slider">
+                    <img src="images/slides/slide3.jpg" alt="image" />
+                    <div class="overlay"></div>
+                </div>
+                <div class="themeflat-container">
+                    <div class="slide-item">
+                        <div class="silde-content">
+                            <span class="flat-sub-slider">SALE UP TO 50% OFF!</span>
+                            <h1 class="flat-title-slider">Empowering Your<br> Fitness Journey
+                            </h1>
+                            <p class="flat-description-slider">The platform that turns aspirations into
+                                accomplishments. Join
+                                now
+                                <br>
+                                and unleash your potential in the world of fitness and wellness.
+                            </p>
+                            <a href="#" class="flat-button">Join our club</a>
+                        </div>
+                        <div class="box-events-slide">
+                            <span class="new-event">new Event </span>
+                            <img src="images/evtent/new-event.jpg" alt="" class="new-event">
+                            <div class="content-event">
+                                <h2 class="title-event"><a href="" class="">marathon event 2023</a></h2>
+                                <ul>
+                                    <li>
+                                        <span class="icon-new">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.8333 1.07692H11.0833V0.538462C11.0833 0.395653 11.0219 0.258693 10.9125 0.157712C10.8031 0.0567306 10.6547 0 10.5 0C10.3453 0 10.1969 0.0567306 10.0875 0.157712C9.97812 0.258693 9.91667 0.395653 9.91667 0.538462V1.07692H4.08333V0.538462C4.08333 0.395653 4.02187 0.258693 3.91248 0.157712C3.80308 0.0567306 3.65471 0 3.5 0C3.34529 0 3.19692 0.0567306 3.08752 0.157712C2.97812 0.258693 2.91667 0.395653 2.91667 0.538462V1.07692H1.16667C0.857247 1.07692 0.560501 1.19038 0.341709 1.39235C0.122916 1.59431 0 1.86823 0 2.15385V12.9231C0 13.2087 0.122916 13.4826 0.341709 13.6846C0.560501 13.8865 0.857247 14 1.16667 14H12.8333C13.1428 14 13.4395 13.8865 13.6583 13.6846C13.8771 13.4826 14 13.2087 14 12.9231V2.15385C14 1.86823 13.8771 1.59431 13.6583 1.39235C13.4395 1.19038 13.1428 1.07692 12.8333 1.07692ZM12.8333 4.30769H1.16667V2.15385H2.91667V2.69231C2.91667 2.83512 2.97812 2.97208 3.08752 3.07306C3.19692 3.17404 3.34529 3.23077 3.5 3.23077C3.65471 3.23077 3.80308 3.17404 3.91248 3.07306C4.02187 2.97208 4.08333 2.83512 4.08333 2.69231V2.15385H9.91667V2.69231C9.91667 2.83512 9.97812 2.97208 10.0875 3.07306C10.1969 3.17404 10.3453 3.23077 10.5 3.23077C10.6547 3.23077 10.8031 3.17404 10.9125 3.07306C11.0219 2.97208 11.0833 2.83512 11.0833 2.69231V2.15385H12.8333V4.30769Z"
+                                                    fill="#C3E92D" />
+                                            </svg>
+                                        </span>
+                                        <a href="">oct 20, 2023</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon-new">
+                                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.85714 2.28571C5.50093 2.28571 4.17517 2.68788 3.04752 3.44135C1.91987 4.19482 1.04097 5.26576 0.521972 6.51874C0.0029711 7.77172 -0.132823 9.15046 0.131761 10.4806C0.396345 11.8108 1.04942 13.0326 2.00841 13.9916C2.9674 14.9506 4.18923 15.6037 5.51938 15.8682C6.84954 16.1328 8.22828 15.997 9.48126 15.478C10.7342 14.959 11.8052 14.0801 12.5586 12.9525C13.3121 11.8248 13.7143 10.4991 13.7143 9.14286C13.7122 7.32487 12.9891 5.58193 11.7036 4.29642C10.4181 3.01091 8.67513 2.28779 6.85714 2.28571ZM10.1186 6.69L7.26143 9.54714C7.20834 9.60023 7.14531 9.64235 7.07594 9.67108C7.00657 9.69981 6.93223 9.7146 6.85714 9.7146C6.78206 9.7146 6.70771 9.69981 6.63835 9.67108C6.56898 9.64235 6.50595 9.60023 6.45286 9.54714C6.39977 9.49405 6.35765 9.43102 6.32892 9.36165C6.30019 9.29229 6.2854 9.21794 6.2854 9.14286C6.2854 9.06777 6.30019 8.99343 6.32892 8.92406C6.35765 8.85469 6.39977 8.79166 6.45286 8.73857L9.31 5.88143C9.36309 5.82834 9.42612 5.78622 9.49549 5.75749C9.56486 5.72876 9.6392 5.71397 9.71429 5.71397C9.78937 5.71397 9.86372 5.72876 9.93308 5.75749C10.0025 5.78622 10.0655 5.82834 10.1186 5.88143C10.1717 5.93452 10.2138 5.99755 10.2425 6.06692C10.2712 6.13628 10.286 6.21063 10.286 6.28571C10.286 6.3608 10.2712 6.43514 10.2425 6.50451C10.2138 6.57388 10.1717 6.63691 10.1186 6.69ZM4.57143 0.571428C4.57143 0.419876 4.63163 0.274531 4.7388 0.167368C4.84596 0.0602039 4.99131 0 5.14286 0H8.57143C8.72298 0 8.86833 0.0602039 8.97549 0.167368C9.08265 0.274531 9.14286 0.419876 9.14286 0.571428C9.14286 0.722981 9.08265 0.868326 8.97549 0.975489C8.86833 1.08265 8.72298 1.14286 8.57143 1.14286H5.14286C4.99131 1.14286 4.84596 1.08265 4.7388 0.975489C4.63163 0.868326 4.57143 0.722981 4.57143 0.571428Z"
+                                                    fill="#C3E92D" />
+                                            </svg>
+                                        </span>
+                                        <a href="">Start 06:00 AM - Until Finish</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon-new">
+                                            <svg width="13" height="16" viewBox="0 0 13 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.28578 0C4.61927 0.00189054 3.02155 0.664747 1.84315 1.84315C0.664747 3.02155 0.00189054 4.61927 0 6.28578C0 11.6644 5.71434 15.7266 5.95792 15.8966C6.054 15.9639 6.16847 16 6.28578 16C6.40309 16 6.51756 15.9639 6.61364 15.8966C6.85721 15.7266 12.5716 11.6644 12.5716 6.28578C12.5697 4.61927 11.9068 3.02155 10.7284 1.84315C9.55 0.664747 7.95229 0.00189054 6.28578 0ZM6.28578 4.00004C6.73785 4.00004 7.17978 4.1341 7.55567 4.38526C7.93155 4.63642 8.22452 4.9934 8.39752 5.41106C8.57053 5.82873 8.61579 6.28831 8.5276 6.7317C8.4394 7.17509 8.2217 7.58237 7.90204 7.90204C7.58237 8.2217 7.17509 8.4394 6.7317 8.5276C6.28831 8.61579 5.82873 8.57053 5.41106 8.39752C4.9934 8.22452 4.63642 7.93155 4.38526 7.55567C4.1341 7.17978 4.00004 6.73785 4.00004 6.28578C4.00004 5.67956 4.24086 5.09818 4.66952 4.66952C5.09818 4.24086 5.67956 4.00004 6.28578 4.00004Z"
+                                                    fill="#C3E92D" />
+                                            </svg>
+                                        </span>
+                                        <a href="">710 1st St. Easton, PA 18042 | Chester County</a>
+                                    </li>
+                                </ul>
+                            </div>
 
-                                        <h6><a href="#">Choosing the Right Running Shoes: A Complete Guide</a></h6>
-                                        <p class="date-popular-news">Oct 12, 2023</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <img src="images/blog/post3.jpg" alt="image">
-                                    </div>
-                                    <div class="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Widget-slide -->
+    <!-- header style v1 -->
+    <div class="title-box">
+        <span class="sub-title">Welcome to runclub!</span>
+        <h2 class="title-section">Zunzo - Your Ultimate Running Community</h2>
+    </div>
+    <!-- header style v1 -->
+    <!-- header style v2 -->
+    <div class="title-box-v2">
+        <span class="sub-title">Welcome to runclub!</span>
+        <h2 class="title-section">Zunzo - Your Ultimate Running Community</h2>
+    </div>
+    <!-- header style v2 -->
+    <!-- banner-paralax -->
+    <div class="tf-widget-banner">
+        <div class="themeflat-container">
+            <div class="tf-banne-paralax">
+                <h2 class="title-banner">
+                    Join our running club now
+                </h2>
+                <span class="sale">-30%</span>
+                <img src="images/runclub.png" alt="runclub">
+                <a href="" class="flat-button">Join now</a>
+            </div>
+        </div>
+    </div>
+    <!-- banner-paralax -->
+    <!-- Team-member -->
+    <div class="tf-widget-team">
+        <div class="themeflat-container">
+            <div class="team-member">
+                <div class="title-box center-title-box">
+                    <span class="sub-title">Our team</span>
+                    <h2 class="title-section">our member, couch</h2>
+                </div>
+                <div class="team">
+                    <div class="team-item">
+                        <div class="team-image">
+                            <img src="images/member/team1.jpg" alt="Team member">
+                            <div class="team-social">
+                                <ul>
+                                    <li>
+                                        <a href=""><i class="icon-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="icon-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="icon-youtube"></i></a>
+                                    </li>
+                                </ul>
+                                <img src="images/member/graphic.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team-image">
+                            <img src="images/member/team2.jpg" alt="Team member">
+                            <div class="team-social">
+                                <ul>
+                                    <li>
+                                        <a href=""><i class="icon-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="icon-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="icon-youtube"></i></a>
+                                    </li>
+                                </ul>
+                                <img src="images/member/graphic.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team-image">
+                            <img src="images/member/team3.jpg" alt="Team member">
+                            <div class="team-social">
+                                <ul>
+                                    <li>
+                                        <a href=""><i class="icon-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="icon-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="icon-youtube"></i></a>
+                                    </li>
+                                </ul>
+                                <img src="images/member/graphic.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team-image">
+                            <img src="images/member/team4.jpg" alt="Team member">
+                            <div class="team-social">
+                                <ul>
+                                    <li>
+                                        <a href=""><i class="icon-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="icon-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="icon-youtube"></i></a>
+                                    </li>
+                                </ul>
+                                <img src="images/member/graphic.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team-member -->
 
-                                        <h6><a href="#">Nutrition Strategies for Peak Performance in Running</a></h6>
-                                        <p class="date-popular-news">Oct 12, 2023</p>
-                                    </div>
-                                </li>
-                            </ul><!-- /.popular-news -->
-                        </div><!-- /.widget-popular-news -->
-
-                        <div class="widget widget-form-subscribe">
-                            <h3>Subscribe For Daily Newsletter</h3>
-                            <img src="images/blog/subscribe.png" alt="image">
-                            <form action="">
-                                <input type="mail" id="mail" name="mail" placeholder="Your email address">
-                                <input type="submit" value="Follow">
-                            </form>
-                        </div><!-- /.widget-Archive -->
-                    </div><!-- /.sidebar -->
-                </div><!-- /.col-md-3 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -803,6 +840,7 @@
     <script type="text/javascript" src="javascript/jquery.fitvids.js"></script>
     <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
     <script type="text/javascript" src="javascript/jquery-ui-datepicker.js"></script>
+    <script type="text/javascript" src="javascript/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>
 </body>
 

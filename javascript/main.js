@@ -110,23 +110,41 @@
             })
         }
     }
-    // $(document).ready(function () {
-    //     $(".search > a").click(function () {
-    //         $(".search .widget-search").show();
-    //         $(".search > a svg").hide();
-    //         $(".search > a").toggleClass('active-search');
-    //     });
-    //     // $(document).on('click', function (e) {
-    //     //     var clickID = e.target.class; if ((clickID !== 'a111')) {
-    //     //         $('.show-search').removeClass('active-search');
-    //     //     }
-    //     // });
-    // });//show-search
-    $('.search > a').on('click', function () {
-        $('.search .widget-search').slideToggle(300);
-        $(".search > a svg").hide();
-        $(this).toggleClass('active-search');
-    });
+
+    var topSearch = function () {
+
+        $(document).on('click', function (e) {
+            var clickID = e.target.id; if ((clickID !== 's')) {
+                $('.top-search').removeClass('active');
+            }
+        });
+        $(document).on('click', function (e) {
+            var clickID = e.target.class; if ((clickID !== 'a111')) {
+                $('.show-search').removeClass('active-search');
+            }
+        });
+
+        $('.show-search').on('click', function (event) {
+            event.stopPropagation();
+        });
+        $('#searchform').on('click', function (event) {
+            event.stopPropagation();
+        });
+        $('.show-search').on('click', function (event) {
+            if (!$('.top-search').hasClass("active")) {
+                $('.top-search').addClass('active');
+                event.preventDefault();
+            }
+            else
+                $('.top-search').removeClass('active');
+            event.preventDefault();
+            if (!$('.show-search').hasClass("active-search"))
+                $('.show-search').addClass('active-search');
+            else
+                $('.show-search').removeClass('active-search');
+        })
+            ;
+    }//show search
 
 
     $('.minicar-overlay').on('click', function () {
@@ -621,7 +639,14 @@
         }
         activeLayout();
     }
-
+    //slider
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+    });
+    //slider
     var responsiveVideo = function () {
         if ($().fitVids) {
             $('.container').fitVids();
@@ -721,6 +746,7 @@
         retinaLogos();
         parallax();
         removePreloader();
+        topSearch();
     });
 
 })(jQuery);

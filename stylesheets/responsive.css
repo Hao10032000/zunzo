@@ -109,6 +109,10 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
+	.widget-blog-content {
+		padding-right: 15px;
+		margin-bottom: 40px;
+	}
 	.widget-tf-blog .widget-blog-left {
 		padding-right: 15px;
 		margin-bottom: 40px;
@@ -352,14 +356,9 @@
 		margin-bottom: 30px;
 	}
 
-	.breadcrumbs,
-	.page-title-heading h1 {
-		padding-left: 15px;
-	}
-
 	.page-title-heading h1,
 	.title-box .main-title {
-		font-size: 35px;
+		font-size: 50px;
 	}
 
 	.entry .feature-post {
@@ -465,15 +464,6 @@
 	.header-top{
 		display: none;
 	}
-	.page-title {
-		padding: 100px 0;
-	}
-
-	.page-title-heading h1, 
-	.title-box .main-title {
-		font-size: 30px;
-	}
-
 	.tp-caption.flat-scroll-btn i {
 		font-size: 18px;
 	}
@@ -497,10 +487,6 @@
 
 	.flat-callout-box .text {
 		text-align: center;
-	}
-
-	.page-title-heading h1 {
-		font-size: 40px;
 	}
 
 	.flat-latest-blog .entry .main-post, 
@@ -578,6 +564,12 @@
 
 /* Mobile Portrait Size */
 @media only screen and (max-width: 479px) {
+	.blog-content-single .main-post .entry-title-single {
+		font-size: 30px;
+	}
+	.main-post h2.entry-title {
+		font-size: 25px;
+	}
 	.blog-content-single blockquote.alignleft i {
 		margin-right: 0px;
 		margin-bottom: 20px;
