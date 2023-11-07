@@ -110,18 +110,24 @@
             })
         }
     }
-    $(document).ready(function () {
-        $(".search > a").click(function () {
-            $(".search .widget-search").show();
-            $(".search > a svg").hide();
-            $(".search > a").toggleClass('active-search');
-        });
-        // $(document).on('click', function (e) {
-        //     var clickID = e.target.class; if ((clickID !== 'a111')) {
-        //         $('.show-search').removeClass('active-search');
-        //     }
-        // });
-    });//show-search
+    // $(document).ready(function () {
+    //     $(".search > a").click(function () {
+    //         $(".search .widget-search").show();
+    //         $(".search > a svg").hide();
+    //         $(".search > a").toggleClass('active-search');
+    //     });
+    //     // $(document).on('click', function (e) {
+    //     //     var clickID = e.target.class; if ((clickID !== 'a111')) {
+    //     //         $('.show-search').removeClass('active-search');
+    //     //     }
+    //     // });
+    // });//show-search
+    $('.search > a').on('click', function () {
+        $('.search .widget-search').slideToggle(300);
+        $(".search > a svg").hide();
+        $(this).toggleClass('active-search');
+    });
+
 
     $('.minicar-overlay').on('click', function () {
         $(this).closest('#header').find('.nav-shop-cart').toggleClass('active');

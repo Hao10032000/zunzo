@@ -294,7 +294,6 @@
 	.entry .entry-title,
 	.flat-latest-blog.style1 .entry .entry-title {
 		font-size: 17px;
-		padding-top: 34px;
 	}
 
 	.flat-row.row-services-box {
@@ -430,6 +429,9 @@
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
+	.page-title{
+		padding: 80px 0;
+	}
 	.comment-form .email-container {
 		margin-bottom: 20px;
 	}
