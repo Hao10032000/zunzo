@@ -405,7 +405,9 @@
 
 /* Tablet Landscape */
  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-
+	.flat-socials li:not(:last-child) {
+		margin-right: 10px;
+	}
 }
 
 /* Tablet Portrait Size */
