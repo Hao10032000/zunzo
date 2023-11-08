@@ -93,21 +93,39 @@
     }
 
     var headerFixed = function () {
-
         if ($('body').hasClass('header-sticky')) {
             var hd_height = $('#header').height();
-            $(window).on('load scroll', function () {
-                if ($(window).scrollTop() > hd_height + 30) {
-                    $('#header').addClass('downscrolled');
+            var nav = $("#header");
+  
+            if (nav.length) {
+                var offsetTop = nav.offset().top,
+                    headerHeight = nav.height(),
+                    injectSpace = $("<div>", {
+                    height: headerHeight,
+                    });
+                injectSpace.hide();
+        
+                if ($("header").hasClass("style-absolute")) {
+                    injectSpace.hide();
                 } else {
-                    $('#header').removeClass('downscrolled');
+                    injectSpace.insertAfter(nav);
                 }
-                if ($(window).scrollTop() > 300) {
-                    $('#header').addClass('upscrolled');
-                } else {
-                    $('#header').removeClass('upscrolled');
-                }
-            })
+                $(window).on('load scroll', function () {
+                    if ($(window).scrollTop() > hd_height + 30) {
+                        $('#header').addClass('downscrolled');
+                        injectSpace.show();
+                    } else {
+                        $('#header').removeClass('downscrolled');
+                        injectSpace.hide();
+                    }
+                    if ($(window).scrollTop() > 300) {
+                        $('#header').addClass('upscrolled');
+                    } else {
+                        $('#header').removeClass('upscrolled');
+                    }
+                })
+            }
+            
         }
     }
 
@@ -640,22 +658,11 @@
         activeLayout();
     }
     //slider
-    // var swiper = new Swiper(".mySwiper", {
-    //     spaceBetween: 30,
-    //     effect: "fade",
-    //     navigation: {
-    //       nextEl: ".swiper-button-next",
-    //       prevEl: ".swiper-button-prev",
-    //     },
-    //     pagination: {
-    //       el: ".swiper-pagination",
-    //       clickable: true,
-    //       dynamicBullets: true,
-    //     },
-    //   });
     var swiper = new Swiper(".mySwiper", {
+        effect: "fade",
         pagination: {
             el: ".swiper-pagination",
+            clickable: true,
             dynamicBullets: true,
         },
     });
