@@ -422,7 +422,7 @@ p.flat-description-slider {
 	justify-content: center;
 	align-items: center;
 	gap: 24px;
-	margin-bottom: 24px;
+	margin-bottom: 86px;
 }
 
 .tf-widget-team .team-social ul>li>a {
@@ -458,17 +458,42 @@ p.flat-description-slider {
 	color: var(--secondary);
 	margin-bottom: 0px;
 }
-/* team member */
 
-.widget-event .item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-	height: auto;
-    max-width: 100%;
+.team-item .shape-team {
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 62px;
+	z-index: 5;
 }
-.widget-event .item{
+
+.team-item .shape-team::before {
+	content: '';
+	width: 100%;
+	height: 62px;
+	position: absolute;
+	background: repeating-linear-gradient(270deg, var(--black) 0px, var(--black) 31px, var(--primary) 31px, var(--primary) 62px);
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.team-item .shape-team::after {
+	content: '';
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 31px;
+	background: repeating-linear-gradient(270deg, var(--primary) 0px, var(--primary) 31px, var(--black) 31px, var(--black) 62px);
+}
+
+/* team member */
+/* event */
+.widget-event .item {
 	display: flex;
 	align-items: stretch;
 	position: relative;
@@ -477,62 +502,216 @@ p.flat-description-slider {
 	width: 100%;
 	padding: 0;
 }
-.widget-event .item .item-event-info {
-    width: 32.8%;
-    clip-path: polygon(0% 0%, 80% 0, 100% 27%, 70% 100%, 0% 100%);
-    background-color: #000000;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 11;
+.widget-event .item:not(:last-child) {
+	margin-bottom: 40px;
+	
 }
-.widget-event .item .info-price {
-    width: 26.3%;
-    background: #fff;
-    position: relative;
-    z-index: 5;
+.widget-event .event-infomation {
+	width: 74.5%;
+	position: relative;
+
+}
+
+.widget-event .event-infomation img {
+	position: absolute;
+	width: 100%;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 0;
+}
+
+.widget-event .event-infomation .info h4 {
+	font-family: "Oswald", sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 42px;
+	text-transform: capitalize;
+	margin-bottom: 24px;
+
+}
+.widget-event .event-infomation .info h4,
+.widget-event .event-infomation .info p,
+.widget-event .tf-info-price,
+.widget-event .tf-info-price .price span,
+.widget-event .tf-info-price .price {
+	color: var(--white);
+}
+
+.widget-event .event-infomation .info p {
+	font-family: "Oswald", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 22px;
+	text-transform: uppercase;
+	margin-right: 20%;
+	padding: 0 2px;
+}
+.widget-event .event-infomation .info p:not(:last-child) {
+	margin-bottom: 18px;
+
+}
+
+.widget-event .event-infomation .info p>span {
+	margin-right: 8px;
+
+}
+
+.widget-event .info {
+	width: 43.8%;
+	height: 100%;
+	clip-path: polygon(0% 0%, 80% 0, 100% 27%, 70% 100%, 0% 100%);
+	background-color: var(--black);
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 11;
+	position: relative;
+}
+
+.widget-event .tf-info-price {
+	width: 25.5%;
+	position: relative;
+	z-index: 5;
 	padding: 54px 40px;
-	background-color: #121212;
+	background-color: var(--black);
+}
+.widget-event .tf-info-price:before {
+    content: '';
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    background: repeating-linear-gradient(0deg, var(--black) 2px, var(--black) 10px, var(--primary) 10px, var(--primary) 20px);
+    left: 0;
+    top: 0;
 }
 .widget-event .item .bg-item-event-2 {
-    content: '';
-    width: 216.5px;
-    height: 235px;
-    background-color: #C3E92D;
-    position: absolute;
-    bottom: -78px;
-    left: 243px;
-    z-index: 10;
-    clip-path: polygon(38% -15%, 83% 18%, 34% 100%, 0% 100%);
+	content: '';
+	width: 216.5px;
+	height: 235px;
+	background-color: var(--primary);
+	position: absolute;
+	bottom: -78px;
+	left: 243px;
+	z-index: 10;
+	clip-path: polygon(16% -31%, 80% 19%, 28% 100%, 0% 100%);
 }
+
 .widget-event .item .item-event-price-bg {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 40px;
-    height: 100%;
-    z-index: 5;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 40px;
+	height: 100%;
+	z-index: 5;
 }
+
 .widget-event .item .item-event-price-bg::before {
-    content: '';
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    background: repeating-linear-gradient(0deg,var(--black) 0px,var(--black) 20px,var(--primary) 20px,var(--primary) 40px);
-    right: 0;
-    top: 0;
+	content: '';
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	background: repeating-linear-gradient(0deg, var(--black) 0px, var(--black) 20px, var(--primary) 20px, var(--primary) 40px);
+	right: 0;
+	top: 0;
 }
+
 .widget-event .item .item-event-price-bg::after {
-    content: '';
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    right: 20px;
-    top: 0;
-    background: repeating-linear-gradient(0deg,var(--primary) 0px,var(--primary) 20px,var(--black) 20px,var(--black) 40px);
+	content: '';
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	right: 20px;
+	top: 0;
+	background: repeating-linear-gradient(0deg, var(--primary) 0px, var(--primary) 20px, var(--black) 20px, var(--black) 40px);
 }
+.widget-event .tf-info-price h4 {
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px;
+    text-transform: capitalize;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+.widget-event .tf-info-price .price span {
+    font-family: 'Oswald';
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+    text-transform: capitalize;
+}
+.widget-event .tf-info-price .price {
+    font-family: 'Jost';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+.widget-event .tf-info-price a:hover {
+	color: var(--black);
+	background-color: var(--white);
+}
+/* event 
+/* event v2 white */
+.event-white-wiget .event-infomation .info h4,
+.event-white-wiget .event-infomation .info p,
+.event-white-wiget .tf-info-price,
+.event-white-wiget .tf-info-price .price span,
+.event-white-wiget .tf-info-price .price {
+	color: var(--black);
+}
+.event-white-wiget .tf-info-price {
+	background-color: var(--white);
+	width: 26.2%;
+}
+.event-white-wiget .info {
+	background-color: var(--white);
+	width: 44.5%;
+}
+.event-white-wiget .item .item-event-price-bg::before {
+	background: repeating-linear-gradient(0deg, var(--white) 0px, var(--white) 20px, var(--primary) 20px, var(--primary) 40px);
+}
+.event-white-wiget .item .item-event-price-bg::after {
+	background: repeating-linear-gradient(0deg, var(--primary) 0px, var(--primary) 20px, var(--white) 20px, var(--white) 40px);
+}
+.event-white-wiget .tf-info-price:before {
+	background: none;
+}
+.event-white-wiget .event-infomation {
+    width: 73.8%;
+}
+.event-white-wiget .event-infomation .info p {
+    padding: 0;
+}
+.event-white-wiget .event-infomation .info p>span {
+    margin-right: 8px;
+    padding: 3px;
+    background-color: #000;
+    border-radius: 50px;
+	text-align: center;
+}
+.event-white-wiget .event-infomation .info p>span svg {
+    height: 16px;
+    margin: 0px 0px;
+}
+.event-white-wiget .event-infomation .info h4 {
+    margin-top: -7px;
+}
+.event-white-wiget .event-infomation .info p:not(:last-child) {
+    margin-bottom: 22px;
+}
+.event-white-wiget .tf-info-price a:hover {
+	color: var(--primary);
+	background-color: var(--black);
+}
+/* event v2 white */
+
 /* css-animation */
 .transition {
 	-webkit-transition: all 500ms linear;
