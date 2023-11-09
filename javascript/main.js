@@ -657,7 +657,7 @@
         }
         activeLayout();
     }
-    //slider
+
     var swiper = new Swiper(".mySwiper", {
         effect: "fade",
         pagination: {
@@ -666,12 +666,15 @@
             dynamicBullets: true,
         },
     });
-    //slider
-    var responsiveVideo = function () {
-        if ($().fitVids) {
-            $('.container').fitVids();
-        }
-    };
+    var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 6,
+      });
+
+    // var responsiveVideo = function () {
+    //     if ($().fitVids) {
+    //         $('.container').fitVids();
+    //     }
+    // };
 
     var flatAnimation = function () {
         if (isMobile.any() == null) {
@@ -716,8 +719,8 @@
         var retina = window.devicePixelRatio > 1 ? true : false;
 
         if (retina) {
-            $('.header .logo').find('img').attr({ src: './images/logo@2x.png', width: '184', height: '50' });
-            $('.footer-widgets .widget .textwidget').find('img').attr({ src: './images/logo-footer@2x.png', width: '184', height: '50' });
+            $('#a1').attr({ src: 'images/Logo2@', width: '190', height: '42' });
+            $('#a2').attr({ src: 'images/logo-footer2@.png', width: '125', height: '43' });
 
         }
     };
@@ -762,7 +765,6 @@
         swClick();
         flatAnimation();
         goTop();
-        responsiveVideo();
         retinaLogos();
         parallax();
         removePreloader();
