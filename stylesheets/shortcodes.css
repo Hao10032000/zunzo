@@ -37,7 +37,9 @@
 	--linear-one: #E9E9E9;
 
 }
-
+.text-white{
+	color: var(--white);
+}
 /* Container
 ------------------------------------------------------------------*/
 .themeflat-container {
@@ -150,7 +152,7 @@ p.post {
 	display: -webkit-flex;
 	justify-content: space-between;
 	padding-top: 132px;
-	padding-bottom: 212px;
+	padding-bottom: 214px;
 }
 
 .image-slider .overlay {
@@ -290,6 +292,22 @@ p.flat-description-slider {
 }
 
 /* slider */
+.tf-title-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.tf-title-wrap a.view-more {
+	font-family: "Oswald", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
 /* title-box */
 .center-title-box {
 	text-align: center;
@@ -309,7 +327,7 @@ p.flat-description-slider {
 	line-height: 24px;
 	color: var(--secondary);
 	letter-spacing: 0.1em;
-	margin-bottom: 20px;
+	margin-bottom: 22px;
 	font-weight: 500;
 }
 
@@ -356,8 +374,17 @@ p.flat-description-slider {
 	color: var(--white);
 	margin-bottom: 0px;
 }
-
 /* title-boxv2 */
+/* paralax event */
+.tf-widget-event {
+	background-image: url("../images/parallax/paralax1.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* paralax event */
+
 /* banner-paralax */
 .tf-widget-banner {
 	background-image: url("../images/parallax/paralax.jpg");
@@ -788,10 +815,11 @@ p.flat-description-slider {
 /* slide image logo */
 
 /* about us */
-.media {
+.image-wraper .media {
 	display: flex;
 	justify-content: flex-start;
-	padding-right: 80px;
+	padding-right: 49px;
+	padding-left: 3px;
 }
 
 .about-button-group {
@@ -800,16 +828,33 @@ p.flat-description-slider {
 	flex-wrap: wrap;
 }
 
+.image-wraper img.mask-media {
+	margin-left: 12px;
+	margin-bottom: 21px;
+}
+
+.image-wraper .media>img {
+	margin-left: -91px;
+}
+
 .infor-about {
 	display: flex;
 }
-.about-box > img {
-    margin-bottom: 28px;
+
+.about-box {
+	padding-left: 7px;
 }
+
+.about-box>img {
+	margin-bottom: 28px;
+	margin-top: 28px;
+}
+
 .about-box p.post {
-    max-width: 522px;
+	max-width: 522px;
 	color: var(--secondary);
 }
+
 .infor-about img {
 	width: 52px;
 	height: 52px;
@@ -824,6 +869,7 @@ p.flat-description-slider {
 	font-size: 16px;
 	text-transform: capitalize;
 	line-height: 26px;
+	margin-bottom: 3px;
 }
 
 .infor-about .info .job {
@@ -834,15 +880,144 @@ p.flat-description-slider {
 	line-height: 22px;
 	color: var(--secondary);
 }
+
 .about-box .line {
-    width: 100%;
-    height: 1px;
-    background-color: var(--primary);
-    margin-top: 24px;
-    margin-bottom: 40px;
+	width: 100%;
+	height: 1px;
+	background-color: var(--primary);
+	margin-top: 22px;
+	margin-bottom: 40px;
 }
 
 /* about us */
+
+/* Benefits */
+.tf-widget-benefit {
+	padding: 80px 0 60px 0;
+}
+
+.benefit-video {
+	text-align: center;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 100%;
+	position: relative;
+	margin: 0 7px;
+}
+
+.benefit-video i {
+	position: absolute;
+	color: var(--white);
+	z-index: 1;
+	top: 43%;
+	left: 44%;
+	font-size: 33px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 100px;
+	padding: 13px;
+	cursor: pointer;
+}
+
+.benefit-video i:hover {
+	background-color: var(--primary)
+}
+
+.benefit-video img.video {
+	border-radius: 100%;
+	margin: 16px;
+	border: 24px solid rgba(255, 177, 133, 0.2);
+}
+
+.title-benefit {
+	font-family: "Oswald", sans-serif;
+	font-weight: 500;
+	color: var(--white);
+	line-height: 28px;
+	text-transform: capitalize;
+	display: block;
+	margin-bottom: 8px;
+
+}
+
+.description-benefit {
+	font-weight: 400;
+	font-size: 18px;
+	color: var(--secondary-one);
+	line-height: 28px;
+	display: block;
+}
+
+.benefit-number span.number {
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	font-size: 80px;
+	color: var(--primary);
+	line-height: 88px;
+	display: block;
+}
+
+.benefit-item {
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.benefit-on-left,
+.benefit-on-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.benefit-on-left {
+	padding-right: 75px;
+}
+
+.benefit-on-right {
+	padding-left: 75px;
+}
+
+.benefit-item:not(:last-child) {
+	margin-bottom: 84px;
+}
+
+.benefit-on-left .benefit-content {
+	border-right: 2px solid var(--primary);
+	padding-right: 9px;
+	text-align: end;
+}
+
+.benefit-on-right .benefit-content {
+	border-left: 2px solid var(--primary);
+	padding-left: 9px;
+	text-align: start;
+}
+
+.benefit-video img.shape-video-1 {
+	position: absolute;
+	bottom: 14%;
+	left: -38%;
+}
+
+.benefit-video img.shape-video-2 {
+	position: absolute;
+	top: 14%;
+	left: -38%;
+}
+
+.benefit-video img.shape-video-3 {
+	position: absolute;
+	right: -38%;
+	bottom: 14%;
+}
+
+.benefit-video img.shape-video-4 {
+	position: absolute;
+	top: 14%;
+	right: -38%;
+}
+
+/* Benefits */
 
 /* css-animation */
 .transition {
@@ -905,22 +1080,6 @@ p.flat-description-slider {
 -------------------------------------------------------------- */
 .blog-content-single .widget-tf-blog {
 	margin-top: 120px;
-}
-
-.widget-tf-blog .tf-blog-title {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 40px;
-}
-
-.widget-tf-blog .tf-blog-title a.view-more {
-	font-family: "Oswald", sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 24px;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
 }
 
 .widget-tf-blog h2.title-blog {
