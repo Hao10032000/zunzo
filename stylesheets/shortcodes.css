@@ -1229,6 +1229,80 @@ color: var(--white);
 }
 /* widget Testimonial */
 
+/* Widget Resgister */
+.widget-register {
+    padding: 78px 225px 78px 80px;
+    height: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+.widget-form-register .pd-form {
+    padding: 0;
+}
+.image-register img{
+	width: 100%;
+}
+.heading-register .title-register {
+    margin-bottom: 0;
+    margin-top: 24px;
+	text-transform: uppercase;
+}
+.list-contact {
+    display: flex;
+    gap: 60px;
+    justify-content: flex-start;
+}
+.list-contact .contact span{
+	font-family: "Oswald", sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--secondary);
+	letter-spacing: 0.08em;
+	line-height: 20px;
+	border-top: 4px;
+}
+.list-contact .contact .address{
+	font-family: "Oswald", sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 28px;
+}
+ul.social-media {
+    display: flex;
+    gap: 24px;
+}
+.social-media li > a {
+    width: 48px;
+    height: 48px;
+    background-color: var(--black);
+    display: block;
+    border-radius: 100%;
+    text-align: center;
+}
+.social-media li > a > i {
+ color: var(--primary);
+ font-size: 21px;
+ line-height: 45px;
+}
+.social-media li > a:hover i {
+	color: var(--white);
+}
+/* .image-register{
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/retinal/img-form.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+} */
+/* Widget Resgister */
+
+
 /* css-animation */
 .transition {
 	-webkit-transition: all 500ms linear;
