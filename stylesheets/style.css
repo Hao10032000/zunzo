@@ -435,8 +435,8 @@ input[type="color"] {
 	color: var(--secondary-one);
 	background-color: transparent;
 	height: 50px;
-	padding: 12px 30px;
-	border-radius: 0;
+	padding: 15px 16px;
+	border-radius: 4px;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;

@@ -675,7 +675,11 @@
             prevEl: ".swiper-button-prev",
         },
     });
-
+    var swiper3 = new Swiper(".image-carousel", {
+        slidesPerView: 3,
+        spaceBetween: 32,
+        loop: true,
+      });
     // var responsiveVideo = function () {
     //     if ($().fitVids) {
     //         $('.container').fitVids();
