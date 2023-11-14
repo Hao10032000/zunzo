@@ -366,7 +366,7 @@ p.flat-description-slider {
 	margin-bottom: 60px;
 }
 
-.title-mdium {
+.title-medium {
 	margin-bottom: 50px;
 }
 
@@ -571,7 +571,16 @@ p.flat-description-slider {
 	background: repeating-linear-gradient(270deg, var(--primary) 0px, var(--primary) 31px, var(--black) 31px, var(--black) 62px);
 }
 
+.team-v2 .name-member {
+	color: var(--white);
+}
+
+.team-v2 .job {
+	color: var(--secondary-one);
+}
+
 /* team member */
+
 /* event */
 .widget-event .item {
 	display: flex;
@@ -1126,6 +1135,27 @@ p.flat-description-slider {
 	margin-bottom: 20px;
 }
 
+.course-text a {
+	color: var(--white);
+}
+
+.course-text a:hover {
+	color: var(--primary);
+}
+
+.course-text p.description-course {
+	color: var(--secondary-one);
+}
+
+.course-text .flat-button {
+	color: var(--black);
+}
+
+.course-text .flat-button:hover {
+	background-color: var(--white);
+	color: var(--black);
+}
+
 /* widget course */
 
 /* widget Testimonial */
@@ -1217,7 +1247,7 @@ p.testimonial {
 	padding-bottom: 32px;
 }
 
-.tf-testimonial-content .start {
+.content .start {
 	margin-bottom: 16px;
 	margin-top: -5px;
 }
@@ -1266,6 +1296,9 @@ p.testimonial {
 
 .wrap-button-testimonial .button-swiper::after {
 	font-size: 12px !important;
+}
+
+.wrap-button-testimonial .button-swiper {
 	color: var(--secondary-one);
 	border: 1px solid var(--secondary-one);
 	width: 30px;
@@ -1273,6 +1306,12 @@ p.testimonial {
 	line-height: 30px !important;
 	text-align: center;
 	border-radius: 100px;
+}
+.wrap-button-testimonial {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    left: 42%;
 }
 
 .wrap-button-testimonial {
@@ -1526,64 +1565,357 @@ select.tb-my-input {
 .tf-widget-benefit-v2 {
 	padding: 112px 0;
 }
+
 .line-benefit {
-    margin: 18px 0;
-    width: 120px;
-    height: 1px;
-    background: repeating-linear-gradient(270deg, var(--black) 0px, var(--black) 10px, var(--primary) 10px, var(--primary) 20px);
-    display: inline-block;
+	margin: 18px 0;
+	width: 120px;
+	height: 1px;
+	background: repeating-linear-gradient(270deg, var(--black) 0px, var(--black) 10px, var(--primary) 10px, var(--primary) 20px);
+	display: inline-block;
 	margin-bottom: 12px;
 }
+
 .benefit-item-v2 {
- position: relative;
- overflow: hidden;
- z-index: 5;
+	position: relative;
+	overflow: hidden;
+	z-index: 5;
 }
+
 .benefit-item-v2::before {
-    content: "";
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: var(--primary);
-    width: 100%;
-    height: 100%;
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	background: var(--primary);
+	width: 100%;
+	height: 100%;
 	transform: translateY(-100%);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    z-index: -5;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	z-index: -5;
 	opacity: 0;
 	visibility: hidden;
 }
-.benefit-item-v2:hover::before{
+
+.benefit-item-v2:hover::before {
 	visibility: visible;
 	transform: translateY(0%);
 	opacity: 1;
 
 }
+
 .benefit-item-v2:hover .benefit-number span.number,
 .benefit-item-v2:hover .title-benefit,
-.benefit-item-v2:hover .description-benefit{
+.benefit-item-v2:hover .description-benefit {
 	color: var(--black);
 
 }
 
 .benefit-v2 .benefit-item-v2:after {
-    position: absolute;
-    background-color: var(--primary);
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 4px;
-    content: '';
+	position: absolute;
+	background-color: var(--primary);
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 4px;
+	content: '';
 }
+
 .benefit-v2 {
-    --bs-gutter-x: 2rem;
+	--bs-gutter-x: 2rem;
 }
+
 /* widget benefit v2 */
+
+/* Widget product */
+.product-item-v1 .product-image {
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+
+.product-item-v1 .product-image img {
+	width: 100%;
+	object-fit: cover;
+	-webkit-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+	transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.product-item-v1:hover .product-image img {
+	-webkit-transform: scale3d(1.2, 1.2, 1.2);
+	transform: scale3d(1.2, 1.2, 1.2);
+	-webkit-transition: all 1.3s cubic-bezier(0, 0, 0.2, 1);
+	transition: all 1.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.product-item-v1 .product-content .title-product {
+	margin-bottom: 4px;
+}
+
+.product-item-v1 .product-content .title-product a {
+	color: var(--white);
+	text-transform: capitalize;
+}
+
+.product-item-v1 .product-content .title-product a:hover {
+	color: var(--primary);
+}
+
+.product-item-v1 .product-content .category-product a {
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 400;
+	display: block;
+	text-transform: capitalize;
+	color: var(--secondary-one);
+	margin-bottom: 8px;
+}
+
+.product-item-v1 .product-content .price,
+.product-item-v1 .product-content .price-sale {
+	color: var(--white);
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 600;
+}
+
+.product-item-v1 .product-content .price-product {
+	color: var(--secondary-one);
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 400;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.product-item-v1 .product-content .percent-sale {
+	color: var(--black);
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: 600;
+	padding: 2px 12px;
+	background-color: var(--primary);
+}
+
+/* Widget product */
+
+/* Widget testimonial-v2 */
+.tf-testimonial-content-v2 {
+	display: flex;
+	padding-left: 110px;
+}
+
+.testimonial-map {
+	padding-left: 100px;
+	padding-right: 72px;
+	padding-top: 5px;
+}
+
+.tf-testimonial-content-v2 .content {
+	padding-left: 40px;
+	padding-top: 50px;
+}
+
+.tf-testimonial-content-v2 .content .info {
+	padding-left: 13px;
+	border-left: 3px solid var(--primary);
+	margin-top: 16px;
+}
+
+/* .tf-testimonial-content-v2 .content .description {
+    margin-right: -13px;
+} */
+.tf-testimonial-content-v2 .content .info .name {
+	color: var(--white);
+	text-transform: capitalize;
+	margin-bottom: 4px;
+}
+
+.tf-testimonial-content-v2 .content .info .post {
+	color: var(--white);
+	display: inline-block;
+}
+
+.tf-testimonial-content-v2 .image-tes-v2 {
+	max-width: 290px;
+	width: 100%;
+	height: auto;
+}
+
+.image-tes-v2 img {
+	max-width: 290px;
+}
+
+.tf-widget-testimonial-v2 {
+	padding: 90px 0 90px 0;
+}
+
+.testimonial-map .km-graphic {
+	background-color: #fff;
+	padding: 24px 0 20px 0;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.testimonial-map .km-graphic .graphic-tes {
+	margin-top: 40px;
+}
+
+.testimonial-map .km-graphic .km {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	gap: 12px;
+}
+
+.testimonial-map .km-graphic .km span {
+	font-family: "Oswald", sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 42px;
+	text-transform: capitalize;
+}
+
+.graphic-tes::before {
+	content: '';
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	background: repeating-linear-gradient(270deg, var(--secondary) 0px, var(--secondary) 20px, var(--primary) 20px, var(--primary) 40px);
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.graphic-tes::after {
+	content: '';
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 20px;
+	background: repeating-linear-gradient(270deg, var(--primary) 0px, var(--primary) 20px, var(--secondary) 20px, var(--secondary) 40px);
+}
+
+.tes-content i {
+	position: absolute;
+	left: 80px;
+	top: -34px;
+	font-size: 60px;
+	z-index: 2;
+}
+
+.btn-testimonil-v2 .swiper-button-next:after,
+.btn-testimonil-v2 .swiper-button-prev:after {
+	font-size: 12px;
+	color: var(--white);
+}
+
+.btn-testimonil-v2 .swiper-button-next,
+.btn-testimonil-v2 .swiper-button-prev {
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+	border: 1px solid var(--secondary-one);
+	position: unset;
+}
+
+.btn-testimonil-v2 {
+	display: flex;
+	gap: 15px;
+	position: absolute;
+	left: 54%;
+	bottom: 2%;
+}
+
+/* Widget testimonial-v2 */
+
+/* Widget Form Contact */
+.tf-widget-form-contact {
+	background-image: url("../images/retinal/contact.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.tf-widget-form-contact:before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0.6;
+	background-color: var(--black);
+	z-index: 0;
+}
+
+.form-contact {
+	padding: 60px 60px 60px 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 32px;
+}
+
+.form-contact .heading-register .title-register {
+	color: var(--white);
+	margin-bottom: -3px;
+	margin-top: 0;
+}
+
+.form-contact .list-contact .contact .address {
+	color: var(--white);
+}
+
+.form-contact .social-media li>a {
+	background-color: var(--white);
+}
+
+.form-contact .social-media li>a:hover {
+	background-color: var(--primary);
+}
+
+.form-contact .social-media li>a>i {
+	color: var(--black);
+}
+
+.form-contact #registerform .submit-register {
+	color: var(--black);
+	background-color: var(--primary);
+	margin-top: 9px;
+}
+
+.form-contact #registerform .submit-register:hover {
+	color: var(--black);
+	background-color: var(--white);
+}
+
+.tf-form-contact .pd-form {
+	padding: 0;
+}
+
+.graphic-form {
+	height: 215px;
+	position: relative;
+	z-index: 2;
+}
+
+.tf-form-contact {
+	padding-top: 195px !important;
+	margin-bottom: -150px;
+	padding: 0 12px;
+	position: relative;
+	z-index: 3;
+}
+
+/* Widget Form Contact  */
 
 /* css-animation */
 .transition {

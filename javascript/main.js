@@ -679,7 +679,13 @@
         slidesPerView: 3,
         spaceBetween: 32,
         loop: true,
-      });
+    });
+    var swiper4 = new Swiper(".testimonial-wrap-v2", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
     // var responsiveVideo = function () {
     //     if ($().fitVids) {
     //         $('.container').fitVids();
