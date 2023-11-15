@@ -77,6 +77,10 @@ p.post {
 	background-color: var(--grey);
 }
 
+.background-surface {
+	background-color: var(--surface);
+}
+
 /* Background color */
 .main-content {
 	padding: 120px 0;
@@ -179,6 +183,7 @@ p.post {
 	display: block;
 	border-radius: 12px;
 	max-width: 414px;
+	width: 100%;
 }
 
 .silde-content {
@@ -187,6 +192,8 @@ p.post {
 	justify-content: flex-end;
 	align-items: flex-start;
 	margin-bottom: 19px;
+	max-width: 590px;
+	width: 100%;
 }
 
 span.new-event {
@@ -320,6 +327,7 @@ p.flat-description-slider {
 	align-items: center;
 	justify-content: space-between;
 	gap: 20px;
+	flex-wrap: wrap;
 }
 
 .tf-title-wrap a.view-more {
@@ -427,6 +435,7 @@ p.flat-description-slider {
 	font-weight: 600;
 	margin-bottom: 44px;
 	display: inline;
+	text-transform: capitalize;
 }
 
 .tf-widget-banner span.sale {
@@ -435,11 +444,10 @@ p.flat-description-slider {
 	line-height: 42px;
 	font-weight: 500;
 	background-color: var(--primary);
-	margin-bottom: 44px;
 	padding: 8px 20px;
-	display: inline;
+	display: inline-block;
 	border-radius: 55px;
-	margin-left: 35px;
+	margin-left: 25px;
 }
 
 .tf-widget-banner img {
@@ -816,7 +824,7 @@ p.flat-description-slider {
 
 .event-white-wiget .event-infomation .info p>span svg {
 	height: 16px;
-	margin: 0px 0px;
+	margin-top: -5px;
 }
 
 .event-white-wiget .event-infomation .info h4 {
@@ -936,6 +944,7 @@ p.flat-description-slider {
 	border-radius: 100%;
 	position: relative;
 	margin: 0 7px;
+	padding: 16px;
 }
 
 .benefit-video i {
@@ -957,8 +966,13 @@ p.flat-description-slider {
 
 .benefit-video img.video {
 	border-radius: 100%;
-	margin: 16px;
 	border: 24px solid rgba(255, 177, 133, 0.2);
+}
+
+.benefit-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .title-benefit {
@@ -1054,6 +1068,20 @@ p.flat-description-slider {
 /* Benefits */
 
 /* widget course */
+.background-surface .numb-count {
+	color: var(--black);
+}
+
+.background-surface .flat-counter:not(last-child)::after {
+	position: absolute;
+	height: 100%;
+	width: 1px;
+	background-color: rgba(233, 233, 233, 1);
+	right: 0;
+	top: 0;
+	content: "";
+}
+
 .course-item-wrap .image-course {
 	position: relative;
 	display: block;
@@ -1120,6 +1148,7 @@ p.flat-description-slider {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 22px;
+	display: inline-block;
 }
 
 .content-course .meta-course ul li a:not(:last-child) {
@@ -1307,23 +1336,30 @@ p.testimonial {
 	text-align: center;
 	border-radius: 100px;
 }
-.wrap-button-testimonial {
-    display: flex;
-    gap: 15px;
-    position: absolute;
-    left: 42%;
-}
 
 .wrap-button-testimonial {
+	display: flex;
+	gap: 15px;
+	position: absolute;
+	left: 47%;
+	bottom: 05%;
+}
+
+/* .wrap-button-testimonial {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
-}
+} */
 
 /* widget Testimonial */
 
 /* Widget Resgister */
+.widget-form-register {
+	width: 100%;
+	overflow: hidden;
+}
+
 .widget-register {
 	padding: 78px 225px 78px 80px;
 	height: 100%;
@@ -1339,6 +1375,7 @@ p.testimonial {
 
 .image-register img {
 	width: 100%;
+	height: 100%;
 }
 
 .heading-register .title-register {
@@ -1916,6 +1953,111 @@ select.tb-my-input {
 }
 
 /* Widget Form Contact  */
+
+/* Widget Mission */
+.image-mission-wrap {
+	position: relative;
+	padding-right: 168px;
+	padding-bottom: 50px;
+}
+
+.image-mission-wrap .image-v2 {
+	position: absolute;
+	bottom: 0;
+	right: 40px;
+	box-shadow: -8px -8px 0px 8px var(--white);
+}
+
+.mission-trust ul {
+	display: flex;
+	align-items: center;
+}
+
+.mission-trust ul li {
+	border-radius: 100px;
+	border: 2px solid var(--line);
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	margin-right: -12px;
+}
+
+.mission-trust ul li .number-m {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 26px;
+	text-transform: uppercase;
+
+}
+
+.mission-trust span {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 26px;
+	color: var(--secondary);
+	max-width: 216px;
+    margin-left: 28px;
+}
+.mission-trust {
+    display: flex;
+    align-content: center;
+    align-items: center;
+	margin-bottom: 48px;
+}
+.mission-tab .nav-tabs {
+    border:none;
+	margin-bottom: 24px;
+}
+.mission-tab .nav-tabs .nav-link {
+	padding: 0;
+	font-family: "Oswald", sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+	color: var(--secondary);
+	text-transform: capitalize;
+	margin-right: 24px;
+	border: none;
+  
+}
+.mission-tab  .nav-tabs .nav-link.active {
+    color: var(--black);
+	position: relative;
+}
+.mission-tab .nav-tabs .nav-link.active:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary);
+    bottom: -8px;
+    left: 0;
+    right: 0;
+}
+.mission-tab .tab-content .post{
+color: var(--secondary);
+margin-bottom: 32px;
+}
+.mission-tab .tab-content ul > li > span{
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 26px;
+	display: block;
+}
+.mission-tab .tab-content ul > li > span > svg{
+	margin-right: 10px;
+}
+.mission-tab .tab-content ul > li:not(:last-child){
+	margin-bottom: 12px;
+}
+/* .mission-trust ul li:not(:first-child) {
+	margin-left: -15px;
+} */
+
+/* Widget Mission */
 
 /* css-animation */
 .transition {

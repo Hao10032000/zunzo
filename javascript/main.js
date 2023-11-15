@@ -668,6 +668,22 @@
     });
     var swiper1 = new Swiper(".mySwiper1", {
         slidesPerView: 6,
+        loop: true,
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            767: {
+                items: 3
+            },
+            991: {
+                items: 4
+            },
+            1200: {
+                items: 6
+            }
+        }
     });
     var swiper2 = new Swiper(".swiper-testimonial", {
         navigation: {
