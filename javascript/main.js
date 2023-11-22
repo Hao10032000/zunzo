@@ -670,20 +670,6 @@
         slidesPerView: 6,
         loop: true,
         autoplay: true,
-        responsive: {
-            0: {
-                items: 2
-            },
-            767: {
-                items: 3
-            },
-            991: {
-                items: 4
-            },
-            1200: {
-                items: 6
-            }
-        }
     });
     var swiper2 = new Swiper(".swiper-testimonial", {
         navigation: {
@@ -702,6 +688,29 @@
             prevEl: ".swiper-button-prev",
         },
     });
+    var swiper5 = new Swiper(".tf-slider-product", {
+        effect: "fade",
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+    const targetDate = new Date("2023-12-31T23:59:59").getTime();
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const timeLeft = targetDate - now;
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById("hours").textContent = hours < 10 ? "0" + hours : hours;
+        document.getElementById("minutes").textContent = minutes < 10 ? "0" + minutes : minutes;
+        document.getElementById("seconds").textContent = seconds < 10 ? "0" + seconds : seconds;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
     // var responsiveVideo = function () {
     //     if ($().fitVids) {
     //         $('.container').fitVids();

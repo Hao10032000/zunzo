@@ -1093,12 +1093,15 @@ ul.submenu li:hover {
 .page-title {
 	background: url(../images/retinal/page-title.jpg) no-repeat center top;
 	background-size: cover;
-	padding: 124px 0 119px 0;
+	padding: 146px 0 97px 0;
 	text-align: center;
 	position: relative;
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+}
+.page-title-blog {
+	padding: 124px 0 119px 0;
 }
 
 .page-title:before {
