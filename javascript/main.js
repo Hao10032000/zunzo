@@ -695,6 +695,15 @@
             clickable: true,
         },
     });
+    var swiper6 = new Swiper(".Swiper-product", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          
+      });
 
     const targetDate = new Date("2023-12-31T23:59:59").getTime();
     function updateCountdown() {
