@@ -717,9 +717,9 @@
         document.getElementById("minutes").textContent = minutes < 10 ? "0" + minutes : minutes;
         document.getElementById("seconds").textContent = seconds < 10 ? "0" + seconds : seconds;
     }
-
     updateCountdown();
     setInterval(updateCountdown, 1000);
+
     // var responsiveVideo = function () {
     //     if ($().fitVids) {
     //         $('.container').fitVids();

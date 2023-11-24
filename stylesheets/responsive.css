@@ -7,6 +7,9 @@
 }
 
 @media only screen and (max-width: 1366px) {
+	.tf-pack-product {
+		padding: 80px 50px;
+	}
 	.logo-client {
 		padding: 0 15px;
 	}
@@ -83,6 +86,9 @@
 		bottom: -80px;
 		right: 0;
 	}
+	.widget-our-product {
+		grid-template-columns: repeat(3, 1fr);
+	}
 
 	.testimonial-map {
 		padding-left: 0px;
@@ -150,6 +156,9 @@
 	.image-mission-wrap .image-v2 {
 		bottom: 0px;
 		right: 0;
+	}
+	.widget-our-product {
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.tf-testimonial-content-v2 {
@@ -536,6 +545,12 @@
 	.widget-event .tf-info-price {
 		width: 35%;
 	}
+	.tf-product-category.columns-5 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.tf-benefit-v3 {
+		grid-template-columns: repeat(2, 1fr);
+	}
 
 }
 
@@ -569,6 +584,16 @@
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
+	.tf-slider-product{
+		margin-bottom: 30px;
+	}
+	.tf-collection{
+	 margin-bottom: 30px;
+	}
+	.banner-tow .pd-r-col{
+		margin-bottom: 30px;
+	}
+
 	.widget-event .item {
 		flex-direction: column;
 	}
@@ -837,6 +862,16 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 @media only screen and (max-width: 650px) {
+	.time-wrapper li {
+		width: 50px;
+		margin: 0 8px;
+	}
+	.time-wrapper li:not(:last-child):before {
+		right: -12px;
+	}
+	.time-wrapper li:not(:last-child):after {
+		right: -12px;
+	}
 	.tf-testimonial-content-v2 {
 		flex-direction: column;
 	}
@@ -844,10 +879,19 @@
 	.tf-testimonial-content-v2 .content {
 		padding-left: 0px;
 	}
+	.tf-product-category.columns-5 {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 /* Mobile Portrait Size */
 @media only screen and (max-width: 479px) {
+	.tf-benefit-v3 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.widget-our-product {
+		grid-template-columns: repeat(1, 1fr);
+	}
 	.list-contact {
 		gap: 20px;
 		flex-wrap: wrap;
@@ -933,7 +977,11 @@
 	}
 }
 
-@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 414px) {
+	.tf-product-category.columns-5 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
 
 @media (max-width: 320px) {
 
