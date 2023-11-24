@@ -31,17 +31,20 @@
     <!-- Colors -->
     <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
 
+ <!-- Carousel -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/owl.carousel.css">
+
     <!-- Animation Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
 
     <link rel="stylesheet" type="text/css" href="stylesheets/swiper-bundle.min.css">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/map.min.css">
+
 
     <!-- Favicon and touch icons  -->
     <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
     <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
-    <link href="icon/favicon.png" rel="shortcut icon">
+    <link href="images/favicon.png" rel="shortcut icon">
 
     <!--[if lt IE 9]>
         <script src="javascript/html5shiv.js"></script>
@@ -68,12 +71,11 @@
             </div>
         </div>
     </div>
-
     <header id="header" class="header style1 clearfix">
         <div class="themeflat-container">
             <div class="header-inner">
                 <div id="logo" class="logo">
-                    <a href="#" rel="home">
+                    <a href="/index.html" rel="home">
                         <img id="a2" src="images/Logo.png" alt="image">
                     </a>
                 </div><!-- /.logo -->
@@ -84,27 +86,26 @@
                             <li class="home">
                                 <a href="#">Home page</a>
                                 <ul class="submenu">
-                                    <li><a href="#">Home V.2</a></li>
-                                    <li><a href="#">Home V.3</a></li>
+                                    <li><a href="/index.html">Home V.1</a></li>
+                                    <li><a href="/homev2.html">Home V.2</a></li>
+                                    <li><a href="/homev3.html">Home V.3</a></li>
                                 </ul><!-- /.submenu -->
                             </li>
-                            <li><a href="#">About us</a></li>
+                            <li><a href="/about.html">About us</a></li>
                             <li><a href="#">Our Events</a>
                                 <ul class="submenu">
-                                    <li><a href="#">Portfolio 2</a></li>
-                                    <li><a href="#">Portfolio 3</a></li>
-                                    <li><a href="#">Portfolio 4</a></li>
+                                    <li><a href="/event.html">Events</a></li>
+                                    <li><a href="/event-details.html">Events Details</a></li>
                                 </ul><!-- /.submenu -->
                             </li>
 
                             <li><a href="#">Latest News</a>
                                 <ul class="submenu">
-                                    <li><a href="#">latest news </a></li>
-                                    <li><a href="#">Blogs 1 </a></li>
-                                    <li><a href="#">Blogs Single</a></li>
+                                    <li><a href="/blog.html">Blogs</a></li>
+                                    <li><a href="/blog-single.html">Blogs Single</a></li>
                                 </ul><!-- /.submenu -->
                             </li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="/contact.html">Contact us</a></li>
                         </ul><!-- /.menu -->
                     </nav><!-- /.mainnav -->
                 </div><!-- /.nav-wrap -->
@@ -1500,9 +1501,8 @@
                     <div class="title-box title-small center-title-box">
                         <h2 class="title-section">Running Sets</h2>
                     </div>
-                    <div class="swiper Swiper-product">
-                        <div class="swiper-wrapper">
-                            <div class="our-product-item swiper-slide">
+                        <div class="owl-themes">
+                            <div class="our-product-item">
                                 <div class="featured-product">
                                     <a href="#" class="product-thumnail">
                                         <div class="label-product">
@@ -1580,7 +1580,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="our-product-item swiper-slide">
+                            <div class="our-product-item">
                                 <div class="featured-product">
                                     <a href="#" class="product-thumnail">
                                         <div class="label-product">
@@ -1653,7 +1653,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="our-product-item swiper-slide">
+                            <div class="our-product-item">
                                 <div class="featured-product">
                                     <a href="#" class="product-thumnail">
                                         <div class="label-product">
@@ -1727,9 +1727,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1920,6 +1917,8 @@
                                     <a href="#"><i class="icon-twitter"></i></a>
                                     <a href="#"><i class="icon-instagram"></i></a>
                                     <a href="#"><i class="icon-youtube"></i></a>
+
+
                                 </div>
                             </div>
                         </div><!-- /.widget -->
@@ -1929,19 +1928,19 @@
                         <div class="widget widget_menu-footer">
                             <h5 class="widget-title">Quick Links</h5>
                             <ul class="menu-footer">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Our Event</a></li>
-                                <li><a href="#">Latest News</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="/about.html">About Us</a></li>
+                                <li><a href="/event.html">Our Event</a></li>
+                                <li><a href="/blog.html">Latest News</a></li>
+                                <li><a href="/contact.html">Contact Us</a></li>
                             </ul><!-- /.menu -->
                         </div><!-- /.widget -->
                         <div class="widget widget_menu-footer">
                             <h5 class="widget-title">Page</h5>
                             <ul class="menu-footer">
-                                <li><a href="#">Blogs</a></li>
-                                <li><a href="#">Events Detail</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="/blog.html">Blogs</a></li>
+                                <li><a href="/event-details.html">Events Detail</a></li>
+                                <li><a href="/event.html">Events</a></li>
+                                <li><a href="/a">About Us</a></li>
                             </ul><!-- /.menu -->
                         </div><!-- /.widget -->
                     </div><!-- /.col-md-4 -->
@@ -1998,8 +1997,9 @@
                     </div><!-- /.col-md-6 -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
-        </div>
-    </footer><!-- /.footer-widgets -->
+        </div><!-- /.footer-widgets -->
+    </footer><!-- Footer -->
+
     <!-- Go Top -->
     <a class="go-top">
         <i class="icon-ctrl"></i>
@@ -2117,13 +2117,13 @@
     <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
     <script type="text/javascript" src="javascript/jquery.fitvids.js"></script>
     <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
+    <script type="text/javascript" src="javascript/owl.carousel.js"></script>
     <script type="text/javascript" src="javascript/jquery-ui-datepicker.js"></script>
     <script type="text/javascript" src="javascript/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="javascript/jquery-countTo.js"></script>
 
-    <script type="text/javascript" src="javascript/map.min.js"></script>
-    <script type="text/javascript" src="javascript/map.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>
+
 </body>
 
 </html>
