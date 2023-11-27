@@ -2889,71 +2889,73 @@ select.tb-my-input {
 	border: 1px solid var(--primary);
 }
 
-.time-wrapper li {
-	width: 60px;
-	height: 60px;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	align-items: center;
-	background-color: var(--white);
-	margin: 0 12px;
-	text-align: center;
-	font-size: 12px;
-	font-weight: 400;
-	color: var(--secondary);
-	border: 1px solid var(--linear);
-	line-height: 16px;
-	padding: 5px;
-	position: relative;
+span.countdown__item {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: var(--white);
+    margin: 0 12px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--secondary);
+    border: 1px solid var(--linear);
+    line-height: 16px;
+    padding: 5px;
+    position: relative;
+	text-transform: capitalize;
 }
-
-.time-wrapper li:not(:last-child):before {
+.featured-countdown{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+span.countdown__item:not(:last-child)::before {
 	position: absolute;
-	content: '';
-	width: 5px;
-	height: 5px;
-	background-color: var(--secondary);
-	right: -15px;
-	top: 40%;
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: var(--secondary);
+    right: -15px;
+    top: 40%;
+}
+span.countdown__item:not(:last-child)::after {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: var(--secondary);
+    right: -15px;
+    top: 60%;
+}
+span.countdown__value {
+    font-size: 24px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 36px;
+}
+.countdown__timer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
-.time-wrapper li:not(:last-child):after {
-	position: absolute;
-	content: '';
-	width: 5px;
-	height: 5px;
-	background-color: var(--secondary);
-	right: -15px;
-	top: 60%;
-}
-
-ul.time-wrapper {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	position: absolute;
-	bottom: 20px;
-	left: 0;
-	right: 0;
-	overflow: hidden;
-	visibility: visible;
-	opacity: 1;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-}
-
-ul.time-wrapper li span {
-	font-size: 24px;
-	font-family: "Oswald", sans-serif;
-	font-weight: 500;
-	line-height: 36px;
-}
-
-.our-product-item:hover ul.time-wrapper {
+.our-product-item:hover .countdown__timer {
 	visibility: hidden;
 	opacity: 0;
 }

@@ -862,6 +862,9 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 @media only screen and (max-width: 650px) {
+	span.countdown__item {
+		width: 45px;
+	}
 	.time-wrapper li {
 		width: 50px;
 		margin: 0 8px;
