@@ -45,6 +45,10 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/swiper-bundle.min.css">
 
+    <link rel="stylesheet" type="text/css" href="stylesheets/magnific-popup.min.css">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/map.min.css">
+
     <!-- Favicon and touch icons  -->
     <link href="images/favicon.png" rel="apple-touch-icon-precomposed" sizes="48x48">
     <link href="images/favicon.png" rel="apple-touch-icon-precomposed">
@@ -56,6 +60,11 @@
     <![endif]-->
 </head>
 <body class="header-sticky">
+       <!-- preload -->
+       <div class="preload preload-container">
+        <div class="middle"></div>
+    </div>
+    <!-- /preload -->
     <!-- Header -->
     <div class="header-top">
         <div class="themeflat-container">
@@ -333,10 +342,9 @@
 
     <!-- Map Contact us -->
     <div class="map-contact-us">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.1141873875285!2d108.22430657587647!3d16.007570241084146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421a055ba72353%3A0xd10dade1bff23b68!2zMTY5IMSQ4bqtdSBRdWFuZyBMxKluaCwgSG_DoCBYdcOibiwgQ-G6qW0gTOG7hywgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1700106946026!5m2!1svi!2s"
-            width="100%" height="578" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-contact relative">
+            <div id="map"></div>
+        </div>
     </div>
     <!-- Map Contact us -->
 
@@ -347,27 +355,27 @@
                 <div class="col-md-5">
                     <div class="contact-page-content">
                         <div class="content-page-title">
-                            <span>Contact us</span>
-                            <h2>Get it touch</h2>
-                            <p class="post">In the 14 years since she first graced our screens in Keeping Up With The
+                            <span class="wow fadeInUp animated">Contact us</span>
+                            <h2 class="wow fadeInUp animated">Get it touch</h2>
+                            <p class="post wow fadeInUp animated">In the 14 years since she first graced our screens in Keeping Up With The
                                 Kardashians.</p>
                         </div>
                         <div class="list-contact-us">
                             <div class="inner">
-                                <span>Phone: </span>
-                                <h6>(555) 123-4567</h6>
+                                <span class="wow fadeInUp animated">Phone: </span>
+                                <h6 class="wow fadeInUp animated">(555) 123-4567</h6>
                             </div>
                             <div class="inner">
-                                <span>Email:</span>
-                                <a href=""><h6>hi.avitex@gmail.com</h6></a>                               
+                                <span class="wow fadeInUp animated">Email:</span>
+                                <a href="" class="wow fadeInUp animated"><h6>hi.avitex@gmail.com</h6></a>                               
                             </div>
                             <div class="inner">
-                                <span>Location:</span>
-                                <h6>710 1st St. Easton, PA 18042 | Chester County</h6>
+                                <span class="wow fadeInUp animated">Location:</span>
+                                <h6 class="wow fadeInUp animated">710 1st St. Easton, PA 18042 | Chester County</h6>
                             </div>
                         </div>
                         <div class="social-contact">
-                            <ul class="social-media">
+                            <ul class="social-media wow fadeInUp animated">
                                 <li>
                                     <a href="#"><i class="icon-twitter"></i></a>
                                 </li>
@@ -526,6 +534,12 @@
     <a class="go-top">
         <i class="icon-ctrl"></i>
     </a>
+
+     <!-- cusor -->
+     <div class="tf-mouse tf-mouse-outer"></div>
+     <div class="tf-mouse tf-mouse-inner"></div>
+
+     
     <!-- Modal-login -->
     <div class="modal fade modal-login" id="exampleModalToggle" aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -639,6 +653,9 @@
       <script type="text/javascript" src="javascript/owl.carousel.js"></script>
       <script type="text/javascript" src="javascript/wow.min.js"></script>
       <script type="text/javascript" src="javascript/count-down.js"></script>
+      <script type="text/javascript" src="javascript/magnific-popup.min.js"></script>
+      <script type="text/javascript" src="javascript/map.min.js"></script>
+      <script type="text/javascript" src="javascript/map.js"></script>
       <script type="text/javascript" src="javascript/main.js"></script>
 </body>
 

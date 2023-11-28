@@ -45,6 +45,10 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/swiper-bundle.min.css">
 
+    <link rel="stylesheet" type="text/css" href="stylesheets/magnific-popup.min.css">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/map.min.css">
+
     <!-- Favicon and touch icons  -->
     <link href="images/favicon.png" rel="apple-touch-icon-precomposed" sizes="48x48">
     <link href="images/favicon.png" rel="apple-touch-icon-precomposed">
@@ -57,6 +61,11 @@
 </head>
 
 <body class="header-sticky">
+       <!-- preload -->
+       <div class="preload preload-container">
+        <div class="middle"></div>
+    </div>
+    <!-- /preload -->
     <!-- Header -->
     <div class="header-top">
         <div class="themeflat-container">
@@ -337,11 +346,11 @@
         <div class="themeflat-container">
              <!-- header style v1 -->
              <div class="title-box title-medium center-title-box">
-                <span class="sub-title">running events</span>
-                <h2 class="title-section">Running Events Coming Up include</h2>
+                <span class="sub-title wow fadeInUp animated">running events</span>
+                <h2 class="title-section wow fadeInUp animated">Running Events Coming Up include</h2>
             </div><!-- header style v1 -->
             <div class="widget-event">
-                <div class="item">
+                <div class="item wow fadeInUp animated">
                     <div class="event-infomation">
                         <div class="info">
                             <h4>denpasar marathon event 2023</h4>
@@ -390,7 +399,7 @@
                     </div>
                     <div class="bg-item-event-2"></div>
                 </div>
-                <div class="item">
+                <div class="item wow fadeInUp animated">
                     <div class="event-infomation">
                         <div class="info">
                             <h4>women marathon event 2023</h4>
@@ -439,7 +448,7 @@
                     </div>
                     <div class="bg-item-event-2"></div>
                 </div>
-                <div class="item">
+                <div class="item wow fadeInUp animated">
                     <div class="event-infomation">
                         <div class="info">
                             <h4>women marathon event 2023</h4>
@@ -488,7 +497,7 @@
                     </div>
                     <div class="bg-item-event-2"></div>
                 </div>
-                <div class="item">
+                <div class="item wow fadeInUp animated">
                     <div class="event-infomation">
                         <div class="info">
                             <h4>women marathon event 2023</h4>
@@ -547,11 +556,8 @@
             <div class="tf-form-contact">
                 <div class="row">
                     <div class="col-md-6 pd-form">
-                        <div class="map-contact">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.1141873875285!2d108.22430657587647!3d16.007570241084146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421a055ba72353%3A0xd10dade1bff23b68!2zMTY5IMSQ4bqtdSBRdWFuZyBMxKluaCwgSG_DoCBYdcOibiwgQ-G6qW0gTOG7hywgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1699948292860!5m2!1svi!2s"
-                                width="100%" height="586" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="map-contact relative">
+                                <div id="map"></div>
                         </div>
                     </div>
                     <div class="col-md-6 pd-form">
@@ -724,6 +730,11 @@
     <a class="go-top">
         <i class="icon-ctrl"></i>
     </a>
+
+    <!-- cusor -->
+    <div class="tf-mouse tf-mouse-outer"></div>
+    <div class="tf-mouse tf-mouse-inner"></div>
+    
     <!-- Modal-login -->
     <div class="modal fade modal-login" id="exampleModalToggle" aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -837,6 +848,9 @@
       <script type="text/javascript" src="javascript/owl.carousel.js"></script>
       <script type="text/javascript" src="javascript/wow.min.js"></script>
       <script type="text/javascript" src="javascript/count-down.js"></script>
+      <script type="text/javascript" src="javascript/magnific-popup.min.js"></script>
+      <script type="text/javascript" src="javascript/map.min.js"></script>
+      <script type="text/javascript" src="javascript/map.js"></script>
       <script type="text/javascript" src="javascript/main.js"></script>
 </body>
 

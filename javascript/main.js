@@ -170,6 +170,42 @@
         $(this).closest('#header').find('.minicar-overlay').toggleClass('active-minicart');
     });//toogle cart
 
+    $('.minicar-overlay').on('click', function () {
+        $(this).closest('#header-v2').find('.nav-shop-cart').toggleClass('active');
+        $(this).closest('#header-v2').find('.minicar-overlay').toggleClass('active-minicart');
+    });
+    $('.cart > a').on('click', function () {
+        $(this).closest('#header-v2').find('.nav-shop-cart').toggleClass('active');
+        $(this).closest('#header-v2').find('.minicar-overlay').toggleClass('active-minicart');
+    });
+    $('.minicart-close').on('click', function () {
+        $(this).closest('#header-v2').find('.nav-shop-cart').toggleClass('active');
+        $(this).closest('#header-v2').find('.minicar-overlay').toggleClass('active-minicart');
+    });//toogle cart
+
+    $(document).on("click", ".menu-item-has-children-mobile", function () {
+        var args = { duration: 600 };
+        if ($(this).hasClass("active")) {
+          $(this).children(".sub-menu-sidebar").slideUp(args);
+          $(this).removeClass("active");
+        } else {
+          $(".sub-menu-sidebar").slideUp(args);
+          $(this).children(".sub-menu-sidebar").slideDown(args);
+          $(".menu-item-has-children-mobile").removeClass("active");
+          $(this).addClass("active");
+        }
+    });
+
+    $('.canvas').on('click', function () {
+        $(this).closest('#header_main').find('.canvas-nav-wrap').toggleClass('active');
+      });
+      $('.canvas-nav-close').on('click', function () {
+          $(this).closest('#header_main').find('.canvas-nav-wrap').toggleClass('active');
+      });
+      $('.canvas-nav-wrap .overlay-canvas-nav').on('click', function () {
+          $(this).closest('#header_main').find('.canvas-nav-wrap').toggleClass('active');
+      });
+      
     //Time
     var timeMinutes = 10;
     var timeSeconds = timeMinutes * 60;
@@ -279,7 +315,7 @@
         });
 
         $('.go-top').on('click', function () {
-            $("html, body").animate({ scrollTop: 0 }, 1000, 'easeInOutExpo');
+            $("html, body").animate({ scrollTop: 0 }, 1000);
             return false;
         });
     };
@@ -293,6 +329,59 @@
 
         }
     };
+    var video = function(){
+        if ($('div').hasClass('benefit-video')) {
+          $('.popup-youtube').magnificPopup({
+            type: 'iframe'
+          });
+        }
+    };
+    var preloader = function () {
+        setTimeout(function () {
+          $(".preload-container").fadeOut("slow", function () {
+              $(this).remove();
+          });
+        }, 1000);
+      };
+      const cursor = function () {
+        var myCursor = jQuery(".tf-mouse");
+        if (myCursor.length) {
+          if ($("body")) {
+            const e = document.querySelector(".tf-mouse-inner"),
+              t = document.querySelector(".tf-mouse-outer");
+            let n,
+              i = 0,
+              o = !1;
+            (window.onmousemove = function (s) {
+              o ||
+                (t.style.transform =
+                  "translate(" + s.clientX + "px, " + s.clientY + "px)"),
+                (e.style.transform =
+                  "translate(" + s.clientX + "px, " + s.clientY + "px)"),
+                (n = s.clientY),
+                (i = s.clientX);
+            }),
+              $("body").on(
+                "mouseenter",
+                "a, .canvas, .progress-wrap",
+                function () {
+                  e.classList.add("mouse-hover"), t.classList.add("mouse-hover");
+                }
+              ),
+              $("body").on(
+                "mouseleave",
+                "a, .canvas, .progress-wrap",
+                function () {
+                  ($(this).is("a") && $(this).closest(".canvas").length) ||
+                    (e.classList.remove("mouse-hover"),
+                    t.classList.remove("mouse-hover"));
+                }
+              ),
+              (e.style.visibility = "visible"),
+              (t.style.visibility = "visible");
+          }
+        }
+      };
 
     // Dom Ready
     $(function () {
@@ -303,6 +392,9 @@
         goTop();
         retinaLogos();
         topSearch();
+        video();
+        preloader();
+        cursor();
     });
 
 })(jQuery);

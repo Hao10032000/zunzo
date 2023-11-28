@@ -414,6 +414,17 @@ p.flat-description-slider {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: 50% 0;
+	width: 100%;
+}
+.tf-widget-form-contact {
+	background-image: url("../images/retinal/contact.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 0;
+	width: 100%;
 }
 
 /* paralax event */
@@ -421,12 +432,13 @@ p.flat-description-slider {
 /* banner-paralax */
 .tf-widget-banner {
 	background-image: url("../images/parallax/paralax.jpg");
-	/* background:linear-gradient(rgba(18, 18, 18, 1), rgba(18, 18, 18, 0)),url("../images/parallax/paralax.jpg"); */
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 155px 0;
+	background-position: 50% 0;
+	width: 100%;
 }
 
 .tf-widget-banner .title-banner {
@@ -1743,6 +1755,9 @@ select.tb-my-input {
 .tf-widget-about-us-v2 {
 	overflow: hidden;
 }
+.app-logo-run {
+	animation: app-logo-run infinite 15s linear
+  }
 
 .ab-v2 {
 	font-size: 18px;
@@ -1789,7 +1804,7 @@ select.tb-my-input {
 .benefit-v2 .benefit-item-v2 {
 	text-align: center;
 	border: 1px solid rgba(255, 255, 255, 0.2);
-	padding: 32px 24px;
+	padding: 32px 25px;
 }
 
 /* widget benefit v2 */
@@ -2069,11 +2084,6 @@ select.tb-my-input {
 
 /* Widget Form Contact */
 .tf-widget-form-contact {
-	background-image: url("../images/retinal/contact.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 	position: relative;
 }
 
@@ -3296,6 +3306,20 @@ span.countdown__value {
 .owl-themes .owl-controls .owl-nav div.owl-next {
     right: -55px !important;
 }
+.owl-theme .owl-controls .owl-nav div.owl-prev:before, 
+.owl-theme .owl-controls .owl-nav div.owl-next:before {
+    font-family: 'icomoon' !important;
+    font-size:15px !important;
+    color: var(--black) !important;
+
+}
+.owl-theme .owl-controls .owl-nav div.owl-prev {
+  transform: rotate(180deg) !important;
+}
+.owl-theme .owl-controls .owl-nav div.owl-prev:before ,
+.owl-theme .owl-controls .owl-nav div.owl-next:before{
+    content: "\e900" !important;
+}
 
 
 /* Pack Products */
@@ -3319,8 +3343,16 @@ span.countdown__value {
 	overflow: hidden;
 }
 .content-blog-v3 .entry-title {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 	text-transform: capitalize;
+	letter-spacing: -0.3px;
+}
+.content-blog-v3 .entry-meta {
+    margin-bottom: 0px;
+}
+.content-blog-v3 .entry-meta span {
+    font-size: 14px;
+    font-weight: 400;
 }
 .item-vlog-v3 .image-blog-v3 img{
 	width: 100%;
@@ -3645,6 +3677,39 @@ span.countdown__value {
 	color: var(--black);
 }
 
+/* Map */
+#map1,
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.mapboxgl-ctrl-attrib a,
+.mapboxgl-ctrl-attrib.mapboxgl-compact,
+a.mapboxgl-ctrl-logo {
+    display: none !important;
+}
+.relative{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.wg-map{
+	width: 100%;
+    height: 300px;
+    position: relative;
+}
+.map-contact {
+    position: relative;
+    width: 100%;
+    height: 586px;
+}
+
+
+/* Map */
 
 
 
@@ -3797,3 +3862,50 @@ span.countdown__value {
 		transform: rotate(360deg);
 	}
 }
+@keyframes preload {
+
+	from,
+	20%,
+	40%,
+	60%,
+	80%,
+	to {
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+  
+	0% {
+		opacity: 0;
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+  
+	20% {
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+  
+	40% {
+		transform: scale3d(0.9, 0.9, 0.9);
+	}
+  
+	60% {
+		opacity: 1;
+		transform: scale3d(1.03, 1.03, 1.03);
+	}
+  
+	80% {
+		transform: scale3d(0.97, 0.97, 0.97);
+	}
+  
+	to {
+		opacity: 1;
+		transform: scale3d(1, 1, 1);
+	}
+  }
+  
+  @keyframes app-logo-run {
+	from {
+	  transform: rotate(0deg)
+	}
+	to {
+	  transform: rotate(360deg)
+	}
+  }

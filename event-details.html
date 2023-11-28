@@ -45,6 +45,10 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/swiper-bundle.min.css">
 
+    <link rel="stylesheet" type="text/css" href="stylesheets/magnific-popup.min.css">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/map.min.css">
+
     <!-- Favicon and touch icons  -->
     <link href="images/favicon.png" rel="apple-touch-icon-precomposed" sizes="48x48">
     <link href="images/favicon.png" rel="apple-touch-icon-precomposed">
@@ -57,6 +61,11 @@
 </head>
 
 <body class="header-sticky">
+       <!-- preload -->
+       <div class="preload preload-container">
+        <div class="middle"></div>
+    </div>
+    <!-- /preload -->
     <!-- Header -->
     <div class="header-top">
         <div class="themeflat-container">
@@ -335,11 +344,11 @@
     <!-- Event Detail Content -->
     <div class="tf-widget-events">
         <div class="themeflat-container">
-            <div class="event-detail-box">
-                <h2 class="title-event-detail title-small">Running Events Coming Up include</h2>
+            <div class="event-detail-box"> 
+                <h2 class="title-event-detail title-small wow fadeInUp animated ">Running Events Coming Up include</h2>
                 <div class="detail-box-content">
                     <div class="image-event">
-                        <img src="images/evtent/evt2.jpg" alt="Image Events">
+                        <img src="images/evtent/evt2.jpg" alt="Image Events" class="wow fadeInLeft animated">
                     </div>
                     <div class="event-detail-card">
                         <div class="event-detail-container">
@@ -409,10 +418,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="event-detail-content">
-                        <h3>Zunzo Fun Run 2023 - Run, Connect, Thrive!</h3>
-                        <p class="post">Zunzo is delighted to present our exciting running event - "Zunzo Fun Run 2023." Get ready to embark on a thrilling running adventure, where you can connect with a passionate running community and experience the full joy of this amazing sport.</p>
+                        <h3 class="wow fadeInUp animated">Zunzo Fun Run 2023 - Run, Connect, Thrive!</h3>
+                        <p class="post wow fadeInUp animated">Zunzo is delighted to present our exciting running event - "Zunzo Fun Run 2023." Get ready to embark on a thrilling running adventure, where you can connect with a passionate running community and experience the full joy of this amazing sport.</p>
                         <ul>
-                            <li>
+                            <li class="wow fadeInUp animated">
                                 <span>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -426,7 +435,7 @@
                                     Suitable for All Levels
                                 </span>
                             </li>
-                            <li>
+                            <li class="wow fadeInUp animated">
                                 <span>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -440,7 +449,7 @@
                                     A Unified Community
                                 </span>
                             </li>
-                            <li>
+                            <li class="wow fadeInUp animated">
                                 <span>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -454,7 +463,7 @@
                                     Charitable Giving
                                 </span>
                             </li>
-                            <li>
+                            <li class="wow fadeInUp animated">
                                 <span>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -469,13 +478,13 @@
                                 </span>
                             </li>
                         </ul>
-                        <p class="post regis-now">Register now, and don't miss out on this incredible opportunity!</p>
-                        <a href="#" class="flat-button">Register now</a>
+                        <p class="post regis-now wow fadeInUp animated">Register now, and don't miss out on this incredible opportunity!</p>
+                        <a href="#" class="flat-button wow fadeInUp animated">Register now</a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="image-event-content">
-                        <img src="images/evtent/evt1.jpg" alt="">
+                        <img src="images/evtent/evt1.jpg" alt="" class="wow fadeInRight animated">
                     </div>
                 </div>
             </div>
@@ -488,12 +497,11 @@
             <div class="tf-form-contact">
                 <div class="row">
                     <div class="col-md-6 pd-form">
-                        <div class="map-contact">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.1141873875285!2d108.22430657587647!3d16.007570241084146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421a055ba72353%3A0xd10dade1bff23b68!2zMTY5IMSQ4bqtdSBRdWFuZyBMxKluaCwgSG_DoCBYdcOibiwgQ-G6qW0gTOG7hywgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1699948292860!5m2!1svi!2s"
-                                width="100%" height="586" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+
+                            <div class="map-contact relative">
+                                <div id="map"></div>
+                            </div>
+
                     </div>
                     <div class="col-md-6 pd-form">
                         <div class="form-contact background-black">
@@ -665,6 +673,11 @@
     <a class="go-top">
         <i class="icon-ctrl"></i>
     </a>
+
+    <!-- cusor -->
+    <div class="tf-mouse tf-mouse-outer"></div>
+    <div class="tf-mouse tf-mouse-inner"></div>
+    
     <!-- Modal-login -->
     <div class="modal fade modal-login" id="exampleModalToggle" aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -778,6 +791,9 @@
        <script type="text/javascript" src="javascript/owl.carousel.js"></script>
        <script type="text/javascript" src="javascript/wow.min.js"></script>
        <script type="text/javascript" src="javascript/count-down.js"></script>
+       <script type="text/javascript" src="javascript/magnific-popup.min.js"></script>
+       <script type="text/javascript" src="javascript/map.min.js"></script>
+       <script type="text/javascript" src="javascript/map.js"></script>
        <script type="text/javascript" src="javascript/main.js"></script>
 </body>
 
