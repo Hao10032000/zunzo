@@ -1177,23 +1177,6 @@ ul.submenu li:hover {
 	cursor: pointer;
 	display: none;
 }
-
-.btn-menu:before {
-	content: "\e9bd";
-	font-family: 'icomoon';
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
-}
-
-.btn-menu.active:before {
-	font-family: 'icomoon';
-	content: "\ea0f";
-	font-size: 20px;
-}
-
 .btn-submenu {
 	position: absolute;
 	right: 20px;
@@ -1330,7 +1313,7 @@ ul.submenu li:hover {
 /* Page Title
 -------------------------------------------------------------- */
 .page-title {
-	background: url(../images/retinal/page-title.jpg) no-repeat center top;
+	background: url(../images/retinal/1.jpg) no-repeat center top;
 	background-size: cover;
 	padding: 146px 0 97px 0;
 	text-align: center;
@@ -1372,6 +1355,8 @@ ul.submenu li:hover {
 
 .breadcrumbs ul i {
 	color: var(--secondary-one);
+	font-size: 11px;
+    margin: 5px;
 }
 
 .breadcrumbs a {
@@ -3079,7 +3064,15 @@ ul.link-footer-bottom {
     background-color: #fff;
     z-index: 101;
 	bottom: 0;
-	left: 0;
+	left: -330px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.canvas-nav-wrap.active{
+	left: 0px;
 }
 .overlay-canvas-nav {
     position: fixed;
@@ -3091,6 +3084,10 @@ ul.link-footer-bottom {
     left: 0;
     bottom: 0;
     z-index: 100;
+	display: none;
+}
+.overlay-canvas-nav.active {
+	display: block;
 }
 .canvas-nav-wrap .nav-item .nav-link {
     padding: 16px;

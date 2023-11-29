@@ -924,6 +924,18 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 @media only screen and (max-width: 650px) {
+	.dot-content .dot {
+		width: 15px;
+		height: 15px;
+		border: solid 4px var(--white);
+	}
+	.tf-slider-product .product-content {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.tf-pack-image img {
+		height: 500px;
+	}
 	span.countdown__item {
 		width: 45px;
 	}
@@ -956,6 +968,9 @@
 
 /* Mobile Portrait Size */
 @media only screen and (max-width: 479px) {
+	.flat-counter {
+		margin-bottom: 0px;
+	}
 	.tf-benefit-v3 {
 		grid-template-columns: repeat(1, 1fr);
 	}

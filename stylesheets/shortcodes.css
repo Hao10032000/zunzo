@@ -431,9 +431,8 @@ p.flat-description-slider {
 
 /* banner-paralax */
 .tf-widget-banner {
-	background-image: url("../images/parallax/paralax.jpg");
+	background-image: url("../images/parallax/2.jpg");
 	background-attachment: fixed;
-	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 155px 0;
@@ -3161,7 +3160,7 @@ span.countdown__value {
 }
 .tf-widget-pack-product{
 	width: 100%;
-	overflow: hidden;
+	padding: 0 12px;
 }
 .tf-pack-image {
 	width: 100%;
@@ -3187,20 +3186,20 @@ span.countdown__value {
 }
 .pack-1 {
     position: absolute;
-	top: 30%;
-    left: 52%;
+	top: 28%;
+    left: 58%;
 	z-index: 10;
 }
 .pack-2 {
     position: absolute;
-	top: 63%;
-    left: 46%;
+	top: 60%;
+    left: 52%;
 	z-index: 10;
 }
 .pack-3 {
     position: absolute;
 	top: 92%;
-    left: 43%;
+    left: 49%;
 	z-index: 10;
 }
 .dot-content .content:before {
@@ -3244,7 +3243,9 @@ span.countdown__value {
     display: inline-block;
     text-align: center;
 	margin-top: 62px;
-    position: relative;
+	left: -58px;
+    width: 150px;
+    position: absolute;
     border-radius: 4px;
     opacity: 0;
     visibility: hidden;
@@ -3254,16 +3255,12 @@ span.countdown__value {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-.dot-content .dot:hover .dot-content .content{
-	margin-top: 22px !important;
+.dot-content .dot:hover .content{
+	margin-top: 35px !important;
 	opacity: 1 !important;
     visibility: visible !important;
 }
-.dot-content:hover .content{
-	margin-top: 8px !important;
-	opacity: 1 !important;
-    visibility: visible !important;
-}
+
 .tf-pack-product {
     padding: 80px 135px;
 	background-color: var(--surface);
