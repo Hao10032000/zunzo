@@ -163,7 +163,19 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
+	#logo-mobie{
+		display: block;
+		text-align: center;
+		padding: 20px;
+	}
+	#mainnav-mobi li.current-menu-item > a {
+		color: var(--primary) !important;
+	}
+	.swiper-testimonial .owl-nav {
+		display: none;
+	}
 	#header-v2 .wrap-inner-header .btn-menu-v2 {
+
 		flex-grow: 1;
 		display: flex;
 		align-items: center;

@@ -103,11 +103,16 @@
                         </svg>
                     </div><!-- //mobile menu button -->
                     <nav id="mainnav" class="mainnav">
+                        <div id="logo-mobie" class="logo">
+                            <a href="index.html" rel="home">
+                                <img id="a2" src="images/Logo.png" alt="image">
+                            </a>
+                        </div><!-- /.logo -->
                         <ul class="menu">
-                            <li class="home">
+                            <li>
                                 <a href="#">Home page</a>
                                 <ul class="submenu">
-                                    <li><a href="index.html">Home V.1</a></li>
+                                    <li class="current-menu-item"><a href="index.html">Home V.1</a></li>
                                     <li><a href="homev2.html">Home V.2</a></li>
                                     <li><a href="homev3.html">Home V.3</a></li>
                                 </ul><!-- /.submenu -->
@@ -326,6 +331,8 @@
             </div><!-- /.header-inner -->
         </div>
     </header><!-- /.header -->
+
+    <div class="overlay-menu-mobie"></div>
 
     <!-- Widget-slide -->
     <div class="tf-slider-widget swiper mySwiper">
@@ -731,7 +738,7 @@
                 <div class="item wow fadeInUp animated">
                     <div class="event-infomation">
                         <div class="info">
-                            <h4>denpasar marathon event 2023</h4>
+                            <h4><a href="event-details.html">denpasar marathon event 2023</a></h4>
                             <p>
                                 <span>
                                     <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
@@ -780,7 +787,7 @@
                 <div class="item wow fadeInUp animated">
                     <div class="event-infomation">
                         <div class="info">
-                            <h4>women marathon event 2023</h4>
+                            <h4><a href="event-details.html">women marathon event 2023</a></h4>
                             <p>
                                 <span>
                                     <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
@@ -1046,8 +1053,9 @@
             <div class="tf-testimonial">
                 <div class="row">
                     <div class="col-md-12 col-lg-7 col-xl-7 col-xxl-7">
-                        <div class="swiper swiper-testimonial wow fadeInLeft animated">
-                            <div class="swiper-wrapper">
+                        
+                        <div class="wow fadeInLeft animated">
+                            <div class="swiper-testimonial">
                                 <div class="swiper-slide">
                                     <div class="tf-testimonial-content">
                                         <div class="user-info">
@@ -1213,11 +1221,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="wrap-button-testimonial">
-                                <div class="button-swiper swiper-button-prev"></div>
-                                <div class="button-swiper swiper-button-next"></div>
-
                             </div>
                         </div>
                     </div>

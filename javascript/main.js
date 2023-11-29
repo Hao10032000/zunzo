@@ -56,7 +56,7 @@
                 menuType = currMenuType;
 
                 if (currMenuType === 'mobile') {
-                    var $mobileMenu = $('#mainnav').attr('id', 'mainnav-mobi').hide();
+                    var $mobileMenu = $('#mainnav').attr('id', 'mainnav-mobi');
                     var hasChildMenu = $('#mainnav-mobi').find('li:has(ul)');
 
                     $('#header').after($mobileMenu);
@@ -65,7 +65,6 @@
                     $('.btn-menu').removeClass('active');
                 } else {
                     var $desktopMenu = $('#mainnav-mobi').attr('id', 'mainnav').removeAttr('style');
-
                     $desktopMenu.find('.submenu').removeAttr('style');
                     $('#header').find('.nav-wrap').append($desktopMenu);
                     $('.btn-submenu').remove();
@@ -73,15 +72,15 @@
             }
         });
 
-        $('.btn-menu').on('click', function () {
-            $('#mainnav-mobi').slideToggle(300);
-            $(this).toggleClass('active');
-        });
-
-        $(document).on('click', '#mainnav-mobi li .btn-submenu', function (e) {
-            $(this).toggleClass('active').next('ul').slideToggle(300);
-            e.stopImmediatePropagation()
-        });
+  
+    $('.btn-menu').on('click', function () {
+        $('#mainnav-mobi').toggleClass('active');
+        $('.overlay-menu-mobie').toggleClass('active');
+    });
+    $('.overlay-menu-mobie').on('click', function () {
+        $('#mainnav-mobi').toggleClass('active');
+        $('.overlay-menu-mobie').toggleClass('active');
+    });
     }
 
     var headerFixed = function () {
@@ -204,7 +203,7 @@
         $(this).closest('#header-v2').find('.canvas-nav-wrap').toggleClass('active');
         $(this).closest('#header-v2').find('.overlay-canvas-nav').toggleClass('active');
     });
-  
+
 
     //Time
     var timeMinutes = 10;
@@ -241,12 +240,7 @@
             dynamicBullets: true,
         },
     });
-    var swiper2 = new Swiper(".swiper-testimonial", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
+
     var swiper3 = new Swiper(".image-carousel", {
         slidesPerView: 3,
         spaceBetween: 32,
@@ -302,6 +296,13 @@
                 items: 2
             }
         }
+    })
+    $('.swiper-testimonial').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 1,
+        dots: false,
     })
 
 
