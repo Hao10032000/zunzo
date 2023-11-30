@@ -72,15 +72,18 @@
             }
         });
 
-  
-    $('.btn-menu').on('click', function () {
-        $('#mainnav-mobi').toggleClass('active');
-        $('.overlay-menu-mobie').toggleClass('active');
-    });
-    $('.overlay-menu-mobie').on('click', function () {
-        $('#mainnav-mobi').toggleClass('active');
-        $('.overlay-menu-mobie').toggleClass('active');
-    });
+        $(document).on('click', '#mainnav-mobi li .btn-submenu', function(e) {
+            $(this).toggleClass('active').next('ul').slideToggle(300);
+            e.stopImmediatePropagation()
+        });
+        $('.btn-menu').on('click', function () {
+            $('#mainnav-mobi').toggleClass('active');
+            $('.overlay-menu-mobie').toggleClass('active');
+        });
+        $('.overlay-menu-mobie').on('click', function () {
+            $('#mainnav-mobi').toggleClass('active');
+            $('.overlay-menu-mobie').toggleClass('active');
+        });
     }
 
     var headerFixed = function () {
@@ -325,8 +328,8 @@
         var retina = window.devicePixelRatio > 1 ? true : false;
 
         if (retina) {
-            $('#a1').attr({ src: 'images/Logo2@', width: '190', height: '42' });
-            $('#a2').attr({ src: 'images/logo-footer2@.png', width: '125', height: '43' });
+            $('#a2').attr({ src: 'images/Logo2@.png', width: '190', height: '42' });
+            $('#a1').attr({ src: 'images/logo-footer2@.png', width: '125', height: '43' });
 
         }
     };
