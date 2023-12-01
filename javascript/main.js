@@ -18,7 +18,9 @@
   * flatAnimation
   * goTop
   * retinaLogos
-  * removePreloader
+  * video
+  * Preloader
+  * Counter Number
 */
 
 ; (function ($) {
@@ -76,7 +78,7 @@
             }
         });
 
-        $(document).on('click', '#mainnav-mobi li .btn-submenu', function(e) {
+        $(document).on('click', '#mainnav-mobi li .btn-submenu', function (e) {
             $(this).toggleClass('active').next('ul').slideToggle(300);
             e.stopImmediatePropagation()
         });
@@ -125,8 +127,8 @@
             }
 
         }
-        
-    }   
+
+    }
     var topSearch = function () {
 
         $(document).on('click', function (e) {
@@ -162,18 +164,18 @@
             ;
     }//show search
 
-     //toogle cart
+    //toogle cart
     $('.minicar-overlay').on('click', function () {
-        $(this).closest('#header').find('.nav-shop-cart').toggleClass('active');
-        $(this).closest('#header').find('.minicar-overlay').toggleClass('active-minicart');
+        $(this).closest('.header').find('.nav-shop-cart').toggleClass('active');
+        $(this).closest('.header').find('.minicar-overlay').toggleClass('active-minicart');
     });
     $('.cart > a').on('click', function () {
-        $(this).closest('#header').find('.nav-shop-cart').toggleClass('active');
-        $(this).closest('#header').find('.minicar-overlay').toggleClass('active-minicart');
+        $(this).closest('.header').find('.nav-shop-cart').toggleClass('active');
+        $(this).closest('.header').find('.minicar-overlay').toggleClass('active-minicart');
     });
     $('.minicart-close').on('click', function () {
-        $(this).closest('#header').find('.nav-shop-cart').toggleClass('active');
-        $(this).closest('#header').find('.minicar-overlay').toggleClass('active-minicart');
+        $(this).closest('.header').find('.nav-shop-cart').toggleClass('active');
+        $(this).closest('.header').find('.minicar-overlay').toggleClass('active-minicart');
     });//toogle cart
 
     $('.minicar-overlay').on('click', function () {
@@ -273,7 +275,7 @@
         loop: true,
         margin: 80,
         nav: false,
-        dots: false,                    
+        dots: false,
         autoplay: true,
         responsive: {
             0: {
@@ -357,6 +359,22 @@
             });
         }, 1000);
     };
+
+    //Counter Number
+    const counters = document.querySelectorAll(".numb-count");
+    counters.forEach((counter) => {
+        counter.innerText = "0";
+        const updateCounter = () => {
+            const target = +counter.getAttribute("data-to");
+            const count = +counter.innerText;
+            const increment = target / 200;
+            if (count < target) {
+                counter.innerText = `${Math.ceil(count + increment)}`;
+                setTimeout(updateCounter, 1);
+            } else counter.innerText = target;
+        };
+        updateCounter();
+    });
     // Dom Ready
     $(function () {
         if (matchMedia('only screen and (min-width: 991px)').matches) {

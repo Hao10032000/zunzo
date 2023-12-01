@@ -1297,7 +1297,7 @@ p.flat-description-slider {
 	color: var(--black);
 }
 
-.background-surface .flat-counter:not(last-child)::after {
+.background-surface .col-12:not(:last-child) > .flat-counter:after {
 	position: absolute;
 	height: 100%;
 	width: 1px;
@@ -1747,7 +1747,7 @@ select.tb-my-input {
 	position: relative;
 }
 
-.flat-counter:not(last-child)::after {
+.col-12:not(:last-child) > .flat-counter:after {
 	position: absolute;
 	height: 100%;
 	width: 1px;
