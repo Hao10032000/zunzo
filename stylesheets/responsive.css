@@ -156,7 +156,7 @@
 	#services>.col-md-6 {
 		width: 100%;
 	}
-	#header-v2 .header-bottom-inner .header-ct-right {
+	.header-v2 .header-bottom-inner .header-ct-right {
 		display: none !important;
 	}
 }
@@ -165,7 +165,7 @@
 @media only screen and (max-width: 991px) {
 	#logo-mobie{
 		display: block;
-		text-align: center;
+		text-align: left;
 		padding: 16px;
 	}
 	#mainnav-mobi li.current-menu-item > a {
@@ -174,7 +174,7 @@
 	.swiper-testimonial .owl-nav {
 		display: none;
 	}
-	#header-v2 .wrap-inner-header .btn-menu-v2 {
+	.header-v2 .wrap-inner-header .btn-menu-v2 {
 
 		flex-grow: 1;
 		display: flex;
@@ -184,22 +184,22 @@
 	.tf-widget-slider-v2 {
 		padding-top: 10px;
 	}
-	#header-v2 .header-bottom {
+	.header-v2 .header-bottom {
 		display: none;
 	}
-	#header-v2 .header-wrap {
+	.header-v2 .header-wrap {
 		padding: 10px 0;
 	}
-	#header-v2 .header-wrap .header-ct-left {
+	.header-v2 .header-wrap .header-ct-left {
 		width: unset;
 	}
 
-	#header-v2 .inner-header .header-wrap .header-ct-center {
+	.header-v2 .inner-header .header-wrap .header-ct-center {
 		display: none;
 	}
 
-	#header-v2 .header-ct-right .wishlist-wrapper,
-	#header-v2 .header-ct-right .cart {
+	.header-v2 .header-ct-right .wishlist-wrapper,
+	.header-v2 .header-ct-right .cart {
 		display: none;
 	}
 

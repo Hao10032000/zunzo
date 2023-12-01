@@ -50,9 +50,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/map.min.css">
 
     <!-- Favicon and touch icons  -->
-    <link href="images/favicon.png" rel="apple-touch-icon-precomposed" sizes="48x48">
-    <link href="images/favicon.png" rel="apple-touch-icon-precomposed">
-    <link href="images/favicon.png" rel="shortcut icon">
+    <link href="images/icon/favicon.png" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="images/icon/favicon.png" rel="apple-touch-icon-precomposed">
+    <link href="images/icon/favicon.png" rel="shortcut icon">
 
     <!--[if lt IE 9]>
         <script src="javascript/html5shiv.js"></script>
@@ -63,11 +63,16 @@
 <body class="header-sticky">
     <!-- preload -->
     <div class="preload preload-container">
-        <div class="middle"></div>
+        <div class="swapping-squares-spinner" :style="spinnerStyle">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
     </div>
     <!-- /preload -->
-    <!-- Header -->
 
+    <!-- Header -->
     <div class="header-boxed">
         <!-- Topbar -->
         <div class="header-top">
@@ -88,7 +93,7 @@
             </div>
         </div><!-- /.topbar -->
 
-        <header id="header-v2" class="header style2 clearfix">
+        <header id="header" class="header-v2 style2 clearfix">
             <div class="inner-header">
                 <div class="wrap-inner-header themeflat-container">
                     <div class="header-wrap clearfix">
@@ -105,7 +110,7 @@
                         <div class="header-ct-left">
                             <div id="logo" class="logo">
                                 <a href="index.html" title="Zunzo – Running Club and Sports WordPress Theme">
-                                    <img class="site-logo" src="images/logo-v2.png"
+                                    <img id="a3" class="site-logo" src="images/logo-v2.png"
                                         alt="Zunzo – Running Club and Sports WordPress Theme">
                                 </a>
                             </div>
@@ -382,7 +387,8 @@
                                                     <ul class="submenu">
                                                         <li><a href="index.html">Home V.1</a></li>
                                                         <li><a href="homev2.html">Home V.2</a></li>
-                                                        <li class="current-menu-item"><a href="homev3.html">Home V.3</a></li>
+                                                        <li class="current-menu-item"><a href="homev3.html">Home V.3</a>
+                                                        </li>
                                                     </ul><!-- /.submenu -->
                                                 </li>
                                                 <li><a href="about.html">About us</a></li>
@@ -1708,6 +1714,293 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="our-product-item wow fadeInUp animated" data-wow-delay="0.1s">
+                                <div class="featured-product">
+                                    <a href="#" class="product-thumnail">
+                                        <div class="label-product">
+                                            <span class="label-new">NEW</span>
+                                        </div>
+                                        <img class="image-thumnail" src="images/product/9.png" alt="Image Product">
+                                    </a>
+                                    <div class="wrap-btn-action">
+                                        <div class="tf-btn-wishlish">
+                                            <span class="btn-action">
+                                                <i class="icon-Vector2"></i>
+                                            </span>
+                                            <div class="label">Add to wish list</div>
+                                        </div>
+                                        <div class="tf-btn-compare">
+                                            <span class="btn-action">
+                                                <i class="icon-Repeat"></i>
+                                            </span>
+                                            <div class="label">Compare</div>
+                                        </div>
+                                        <div class="tf-btn-quickview">
+                                            <span class="btn-action">
+                                                <i class="icon-Eye"></i>
+                                            </span>
+                                            <div class="label">Quick View</div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-add-cart">Add To Card</a>
+                                </div>
+                                <div class="product-content">
+                                    <a href="#">
+                                        <h3 class="product-title">BROOKS GHOST 15 - WOMEN'S</h3>
+                                    </a>
+                                    <div class="star-review">
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.10826 7.16511L0.99574 5.41633C0.597019 5.09747 0.771897 4.45625 1.27787 4.38397L4.27411 4.25048L5.55362 1.04264C5.64281 0.864851 5.8241 0.75293 6.02288 0.75293C6.22166 0.75293 6.40295 0.865434 6.49213 1.04264L7.77165 4.25048L10.7679 4.38397C11.2739 4.45625 11.4487 5.09747 11.05 5.41633L8.9375 7.16511L9.51401 10.5793C9.58047 11.0451 9.09664 11.3936 8.67635 11.1832L6.02288 9.49681L3.36941 11.1826C2.94854 11.3931 2.46529 11.0445 2.53175 10.5787L3.10826 7.16511Z"
+                                                fill="#E9E9E9" />
+                                        </svg>
+                                        <span class="review">(1.234 reviews)</span>
+                                    </div>
+                                    <div class="price">$68.00</div>
+                                </div>
+                            </div>
+                            <div class="our-product-item wow fadeInUp animated" data-wow-delay="0.3s">
+                                <div class="featured-product">
+                                    <a href="#" class="product-thumnail">
+                                        <div class="label-product">
+                                            <span class="label-new">NEW</span>
+                                        </div>
+                                        <img class="image-thumnail" src="images/product/10.png" alt="Image Product">
+                                    </a>
+                                    <div class="wrap-btn-action">
+                                        <div class="tf-btn-wishlish">
+                                            <span class="btn-action">
+                                                <i class="icon-Vector2"></i>
+                                            </span>
+                                            <div class="label">Add to wish list</div>
+                                        </div>
+                                        <div class="tf-btn-compare">
+                                            <span class="btn-action">
+                                                <i class="icon-Repeat"></i>
+                                            </span>
+                                            <div class="label">Compare</div>
+                                        </div>
+                                        <div class="tf-btn-quickview">
+                                            <span class="btn-action">
+                                                <i class="icon-Eye"></i>
+                                            </span>
+                                            <div class="label">Quick View</div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-add-cart">Add To Card</a>
+                                </div>
+                                <div class="product-content">
+                                    <a href="#">
+                                        <h3 class="product-title">BROOKS GHOST 15 - WOMEN'S</h3>
+                                    </a>
+                                    <div class="star-review">
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.10826 7.16511L0.99574 5.41633C0.597019 5.09747 0.771897 4.45625 1.27787 4.38397L4.27411 4.25048L5.55362 1.04264C5.64281 0.864851 5.8241 0.75293 6.02288 0.75293C6.22166 0.75293 6.40295 0.865434 6.49213 1.04264L7.77165 4.25048L10.7679 4.38397C11.2739 4.45625 11.4487 5.09747 11.05 5.41633L8.9375 7.16511L9.51401 10.5793C9.58047 11.0451 9.09664 11.3936 8.67635 11.1832L6.02288 9.49681L3.36941 11.1826C2.94854 11.3931 2.46529 11.0445 2.53175 10.5787L3.10826 7.16511Z"
+                                                fill="#E9E9E9" />
+                                        </svg>
+                                        <span class="review">(1.234 reviews)</span>
+                                    </div>
+                                    <div class="price">$68.00
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our-product-item wow fadeInUp animated" data-wow-delay="0.5s">
+                                <div class="featured-product">
+                                    <a href="#" class="product-thumnail">
+                                        <div class="label-product">
+                                            <div class="sale-percent">-20%</div>
+                                        </div>
+                                        <img class="image-thumnail" src="images/product/11.png" alt="Image Product">
+                                    </a>
+                                    <div class="wrap-btn-action">
+                                        <div class="tf-btn-wishlish">
+                                            <span class="btn-action">
+                                                <i class="icon-Vector2"></i>
+                                            </span>
+                                            <div class="label">Add to wish list</div>
+                                        </div>
+                                        <div class="tf-btn-compare">
+                                            <span class="btn-action">
+                                                <i class="icon-Repeat"></i>
+                                            </span>
+                                            <div class="label">Compare</div>
+                                        </div>
+                                        <div class="tf-btn-quickview">
+                                            <span class="btn-action">
+                                                <i class="icon-Eye"></i>
+                                            </span>
+                                            <div class="label">Quick View</div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-add-cart">Add To Card</a>
+                                </div>
+                                <div class="product-content">
+                                    <a href="#">
+                                        <h3 class="product-title">BROOKS GHOST 15 - WOMEN'S</h3>
+                                    </a>
+                                    <div class="star-review">
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.10826 7.16511L0.99574 5.41633C0.597019 5.09747 0.771897 4.45625 1.27787 4.38397L4.27411 4.25048L5.55362 1.04264C5.64281 0.864851 5.8241 0.75293 6.02288 0.75293C6.22166 0.75293 6.40295 0.865434 6.49213 1.04264L7.77165 4.25048L10.7679 4.38397C11.2739 4.45625 11.4487 5.09747 11.05 5.41633L8.9375 7.16511L9.51401 10.5793C9.58047 11.0451 9.09664 11.3936 8.67635 11.1832L6.02288 9.49681L3.36941 11.1826C2.94854 11.3931 2.46529 11.0445 2.53175 10.5787L3.10826 7.16511Z"
+                                                fill="#E9E9E9" />
+                                        </svg>
+                                        <span class="review">(1.234 reviews)</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="price-sale">$68.00</span>
+                                        <span class="price-product">$98.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our-product-item wow fadeInUp animated" data-wow-delay="0.7s">
+                                <div class="featured-product">
+                                    <a href="#" class="product-thumnail">
+                                        <div class="label-product">
+                                            <span class="label-new">NEW</span>
+                                        </div>
+                                        <img class="image-thumnail" src="images/product/12.png" alt="Image Product">
+                                    </a>
+                                    <div class="wrap-btn-action">
+                                        <div class="tf-btn-wishlish">
+                                            <span class="btn-action">
+                                                <i class="icon-Vector2"></i>
+                                            </span>
+                                            <div class="label">Add to wish list</div>
+                                        </div>
+                                        <div class="tf-btn-compare">
+                                            <span class="btn-action">
+                                                <i class="icon-Repeat"></i>
+                                            </span>
+                                            <div class="label">Compare</div>
+                                        </div>
+                                        <div class="tf-btn-quickview">
+                                            <span class="btn-action">
+                                                <i class="icon-Eye"></i>
+                                            </span>
+                                            <div class="label">Quick View</div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-add-cart">Add To Card</a>
+                                </div>
+                                <div class="product-content">
+                                    <a href="#">
+                                        <h3 class="product-title">BROOKS GHOST 15 - WOMEN'S</h3>
+                                    </a>
+                                    <div class="star-review">
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.64341 7.16511L0.530896 5.41633C0.132176 5.09747 0.307053 4.45625 0.813031 4.38397L3.80926 4.25048L5.08878 1.04264C5.17797 0.864851 5.35926 0.75293 5.55803 0.75293C5.75681 0.75293 5.9381 0.865434 6.02729 1.04264L7.30681 4.25048L10.303 4.38397C10.809 4.45625 10.9839 5.09747 10.5852 5.41633L8.47266 7.16511L9.04917 10.5793C9.11562 11.0451 8.63179 11.3936 8.21151 11.1832L5.55803 9.49681L2.90456 11.1826C2.48369 11.3931 2.00045 11.0445 2.0669 10.5787L2.64341 7.16511Z"
+                                                fill="#ECB018" />
+                                        </svg>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.10826 7.16511L0.99574 5.41633C0.597019 5.09747 0.771897 4.45625 1.27787 4.38397L4.27411 4.25048L5.55362 1.04264C5.64281 0.864851 5.8241 0.75293 6.02288 0.75293C6.22166 0.75293 6.40295 0.865434 6.49213 1.04264L7.77165 4.25048L10.7679 4.38397C11.2739 4.45625 11.4487 5.09747 11.05 5.41633L8.9375 7.16511L9.51401 10.5793C9.58047 11.0451 9.09664 11.3936 8.67635 11.1832L6.02288 9.49681L3.36941 11.1826C2.94854 11.3931 2.46529 11.0445 2.53175 10.5787L3.10826 7.16511Z"
+                                                fill="#E9E9E9" />
+                                        </svg>
+                                        <span class="review">(1.234 reviews)</span>
+                                    </div>
+                                    <div class="price">
+                                        $68.00
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2107,7 +2400,8 @@
                                         <li><a href="blog-single.html">Sport</a></li>
                                     </ul>
                                 </div>
-                                <h5 class="entry-title wow fadeInUp animated"><a href="blog-single.html">Exploring the World of Organic
+                                <h5 class="entry-title wow fadeInUp animated"><a href="blog-single.html">Exploring the
+                                        World of Organic
                                         Beauty: Tips and
                                         Trends for a Natural Glow</a></h5>
                                 <div class="entry-meta wow fadeInUp animated">
@@ -2567,10 +2861,6 @@
         <i class="icon-ctrl"></i>
     </a>
 
-    <!-- cusor -->
-    <div class="tf-mouse tf-mouse-outer"></div>
-    <div class="tf-mouse tf-mouse-inner"></div>
-
     <!-- Modal-login -->
     <div class="modal fade modal-login" id="exampleModalToggle" aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -2689,7 +2979,6 @@
     <script type="text/javascript" src="javascript/map.min.js"></script>
     <script type="text/javascript" src="javascript/map.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>
-
 </body>
 
 </html>

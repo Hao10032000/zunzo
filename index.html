@@ -50,9 +50,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/map.min.css">
 
     <!-- Favicon and touch icons  -->
-    <link href="images/favicon.png" rel="apple-touch-icon-precomposed" sizes="48x48">
-    <link href="images/favicon.png" rel="apple-touch-icon-precomposed">
-    <link href="images/favicon.png" rel="shortcut icon">
+    <link href="images/icon/favicon.png" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="images/icon/favicon.png" rel="apple-touch-icon-precomposed">
+    <link href="images/icon/favicon.png" rel="shortcut icon">
 
     <!--[if lt IE 9]>
         <script src="javascript/html5shiv.js"></script>
@@ -63,8 +63,14 @@
 <body class="header-sticky">
     <!-- preload -->
     <div class="preload preload-container">
-        <div class="middle"></div>
+        <div class="swapping-squares-spinner" :style="spinnerStyle">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
     </div>
+
     <!-- /preload -->
 
     <!-- Header -->
@@ -352,13 +358,16 @@
                                 accomplishments. Join now and unleash your potential in the world of fitness and
                                 wellness.
                             </p>
-                            <a href="contact.html" class="flat-button">Join our club</a>
+                            <div class="button">
+                                <a href="contact.html" class="flat-button">Join our club</a>
+                            </div>
                         </div>
                         <div class="box-events-slide">
                             <span class="new-event">new Event </span>
                             <img src="images/evtent/new-event.jpg" alt="image event" class="new-event">
                             <div class="content-event">
-                                <h2 class="title-event"><a href="event-details.html" class="">marathon event 2023</a></h2>
+                                <h2 class="title-event"><a href="event-details.html" class="">marathon event 2023</a>
+                                </h2>
                                 <ul>
                                     <li>
                                         <span class="icon-new">
@@ -408,21 +417,24 @@
                 <div class="themeflat-container">
                     <div class="slide-item">
                         <div class="silde-content">
-                            <span class="flat-sub-slider wow fadeInUp animated">SALE UP TO 50% OFF!</span>
-                            <h1 class="flat-title-slider wow fadeInUp animated">Run with Passion and Purpose
+                            <span class="flat-sub-slider">SALE UP TO 50% OFF!</span>
+                            <h1 class="flat-title-slider">Run with Passion and Purpose
                             </h1>
-                            <p class="flat-description-slider wow fadeInUp animated">The platform that turns aspirations
+                            <p class="flat-description-slider">The platform that turns aspirations
                                 into
                                 accomplishments. Join now and unleash your potential in the world of fitness and
                                 wellness.
                             </p>
-                            <a href="contact.html" class="flat-button wow fadeInUp animated">Join our club</a>
+                            <div class="button">
+                                <a href="contact.html" class="flat-button">Join our club</a>
+                            </div>
                         </div>
                         <div class="box-events-slide">
                             <span class="new-event">new Event </span>
                             <img src="images/evtent/new-event.jpg" alt="" class="new-event">
                             <div class="content-event">
-                                <h2 class="title-event"><a href="event-details.html" class="">marathon event 2023</a></h2>
+                                <h2 class="title-event"><a href="event-details.html" class="">marathon event 2023</a>
+                                </h2>
                                 <ul>
                                     <li>
                                         <span class="icon-new">
@@ -472,21 +484,24 @@
                 <div class="themeflat-container">
                     <div class="slide-item">
                         <div class="silde-content">
-                            <span class="flat-sub-slider wow fadeInUp animated">SALE UP TO 50% OFF!</span>
-                            <h1 class="flat-title-slider wow fadeInUp animated">Find Your Pace, Find Your Tribe
+                            <span class="flat-sub-slider">SALE UP TO 50% OFF!</span>
+                            <h1 class="flat-title-slider">Find Your Pace, Find Your Tribe
                             </h1>
-                            <p class="flat-description-slider wow fadeInUp animated">The platform that turns aspirations
+                            <p class="flat-description-slider">The platform that turns aspirations
                                 into
                                 accomplishments. Join now and unleash your potential in the world of fitness and
                                 wellness.
                             </p>
-                            <a href="contact.html" class="flat-button wow fadeInUp animated">Join our club</a>
+                            <div class="button">
+                                <a href="contact.html" class="flat-button">Join our club</a>
+                            </div>
                         </div>
                         <div class="box-events-slide">
                             <span class="new-event">new Event </span>
                             <img src="images/evtent/new-event.jpg" alt="" class="new-event">
                             <div class="content-event">
-                                <h2 class="title-event"><a href="event-details.html" class="">marathon event 2023</a></h2>
+                                <h2 class="title-event"><a href="event-details.html" class="">marathon event 2023</a>
+                                </h2>
                                 <ul>
                                     <li>
                                         <span class="icon-new">
@@ -589,7 +604,8 @@
                                 <img class="mask-media" src="images/about/mask1.png" alt="image">
                                 <img class="shape-media" src="images/about/graphic.png" alt="image">
                             </div>
-                            <img src="images/about/mask2.png" alt="image">
+                            <img src="images/about/mask2.png" alt="image" class="image-gr wow fadeInRight animated">
+                            <img src="images/about/Intersect.png" alt="image" class="intersect-img">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -904,7 +920,8 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <h5 class="title-course"><a href="blog-single.html">Embracing the Journey: Unraveling the Life-Changing
+                                <h5 class="title-course"><a href="blog-single.html">Embracing the Journey: Unraveling
+                                        the Life-Changing
                                         Benefits of
                                         Running</a></h5>
                                 <p class="description-course">Explore the myriad health advantages that running offers,
@@ -970,7 +987,8 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <h5 class="title-course"><a href="blog-single.html">Empowerment through Running: Discovering the Key to
+                                <h5 class="title-course"><a href="blog-single.html">Empowerment through Running:
+                                        Discovering the Key to
                                         a Healthier and Happier Life</a></h5>
                                 <p class="description-course">Unleash the freedom of mind and body as you experience the
                                     joy and liberation of running. Discover how running...</p>
@@ -1034,7 +1052,8 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <h5 class="title-course"><a href="blog-single.html">Running towards Greatness: Unleash Your Inner
+                                <h5 class="title-course"><a href="blog-single.html">Running towards Greatness: Unleash
+                                        Your Inner
                                         Athlete and Embrace the Joy of Fitness</a></h5>
                                 <p class="description-course">Embrace the camaraderie and support of the running
                                     community as you connect with like-minded individuals...</p>
@@ -1053,7 +1072,6 @@
             <div class="tf-testimonial">
                 <div class="row">
                     <div class="col-md-12 col-lg-7 col-xl-7 col-xxl-7">
-                        
                         <div class="wow fadeInLeft animated">
                             <div class="swiper-testimonial">
                                 <div class="swiper-slide">
@@ -1286,8 +1304,8 @@
                                             <a href="youtube.com"><i class="icon-youtube"></i></a>
                                         </li>
                                     </ul>
-                                    <div class="shape-team"></div>
                                 </div>
+                                <div class="shape-team"></div>
                             </div>
                             <h3 class="name-member">Chris pad</h3>
                             <h4 class="job">Co - Founder Zunzo</h4>
@@ -1309,8 +1327,8 @@
                                             <a href="youtube.com"><i class="icon-youtube"></i></a>
                                         </li>
                                     </ul>
-                                    <div class="shape-team"></div>
                                 </div>
+                                <div class="shape-team"></div>
                             </div>
                             <h3 class="name-member">maverick</h3>
                             <h4 class="job">Manager</h4>
@@ -1332,8 +1350,8 @@
                                             <a href="youtube.com"><i class="icon-youtube"></i></a>
                                         </li>
                                     </ul>
-                                    <div class="shape-team"></div>
                                 </div>
+                                <div class="shape-team"></div>
                             </div>
                             <h3 class="name-member">Jessica nguyen</h3>
                             <h4 class="job">Coach</h4>
@@ -1355,8 +1373,8 @@
                                             <a href="youtube.com"><i class="icon-youtube"></i></a>
                                         </li>
                                     </ul>
-                                    <div class="shape-team"></div>
                                 </div>
+                                <div class="shape-team"></div>
                             </div>
                             <h3 class="name-member">jenifer nolan</h3>
                             <h4 class="job">Co - Founder Zunzo</h4>
@@ -1416,7 +1434,8 @@
                                     </ul>
 
                                 </div>
-                                <h2 class="entry-title"><a href="blog-single.html">10 Essential Tips for Beginner Runners: Start Your
+                                <h2 class="entry-title"><a href="blog-single.html">10 Essential Tips for Beginner
+                                        Runners: Start Your
                                         Running Journey Right</a>
                                 </h2>
                                 <div class="entry-meta">
@@ -1439,7 +1458,8 @@
                                         <li><a href="blog-single.html">Race</a></li>
                                     </ul>
                                 </div>
-                                <h2 class="entry-title wow fadeInUp animated"><a href="blog-single.html">The Science Behind Running:
+                                <h2 class="entry-title wow fadeInUp animated"><a href="blog-single.html">The Science
+                                        Behind Running:
                                         How It Benefits Your
                                         Body
                                         and Mind</a>
@@ -1462,7 +1482,8 @@
                                         <li><a href="blog-single.html">Running</a></li>
                                     </ul>
                                 </div>
-                                <h2 class="entry-title wow fadeInUp animated"><a href="blog-single.html">From Couch to 5K: A
+                                <h2 class="entry-title wow fadeInUp animated"><a href="blog-single.html">From Couch to
+                                        5K: A
                                         Step-by-Step Guide to Becoming a
                                         Runner</a>
                                 </h2>
@@ -1484,7 +1505,8 @@
                                         <li><a href="blog-single.html">Running</a></li>
                                     </ul>
                                 </div>
-                                <h2 class="entry-title wow fadeInUp animated"><a href="blog-single.html">The Best Running Shoes for
+                                <h2 class="entry-title wow fadeInUp animated"><a href="blog-single.html">The Best
+                                        Running Shoes for
                                         Every Terrain: Find Your
                                         Perfect Fit</a>
                                 </h2>
@@ -1673,10 +1695,6 @@
             </div><!-- /.container -->
         </div><!-- /.footer-widgets -->
     </footer>
-
-    <!-- cusor -->
-    <div class="tf-mouse tf-mouse-outer"></div>
-    <div class="tf-mouse tf-mouse-inner"></div>
 
     <!-- Go Top -->
     <a class="go-top">

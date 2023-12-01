@@ -50,9 +50,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/map.min.css">
 
     <!-- Favicon and touch icons  -->
-    <link href="images/favicon.png" rel="apple-touch-icon-precomposed" sizes="48x48">
-    <link href="images/favicon.png" rel="apple-touch-icon-precomposed">
-    <link href="images/favicon.png" rel="shortcut icon">
+    <link href="images/icon/favicon.png" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="images/icon/favicon.png" rel="apple-touch-icon-precomposed">
+    <link href="images/icon/favicon.png" rel="shortcut icon">
 
     <!--[if lt IE 9]>
         <script src="javascript/html5shiv.js"></script>
@@ -61,9 +61,14 @@
 </head>
 
 <body class="header-sticky">
-       <!-- preload -->
-       <div class="preload preload-container">
-        <div class="middle"></div>
+    <!-- preload -->
+    <div class="preload preload-container">
+        <div class="swapping-squares-spinner" :style="spinnerStyle">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+          </div>
     </div>
     <!-- /preload -->
     <!-- Header -->
@@ -365,7 +370,8 @@
                                 <img class="mask-media wow fadeInLeft animated" src="images/about/mask1.png" alt="image">
                                 <img class="shape-media wow fadeInRight animated" src="images/about/graphic.png" alt="image">
                             </div>
-                            <img src="images/about/mask2.png" alt="image" class="wow fadeInUp animated">
+                            <img src="images/about/mask2.png" alt="image" class="image-gr wow fadeInRight animated">
+                            <img src="images/about/Intersect.png" alt="image" class="intersect-img">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -724,8 +730,9 @@
                                             <a href=""><i class="icon-youtube"></i></a>
                                         </li>
                                     </ul>
-                                    <div class="shape-team"></div>
+                                   
                                 </div>
+                                <div class="shape-team"></div>
                             </div>
                             <h3 class="name-member">Chris pad</h3>
                             <h4 class="job">Co - Founder Zunzo</h4>
@@ -747,8 +754,9 @@
                                             <a href="youtube.com"><i class="icon-youtube"></i></a>
                                         </li>
                                     </ul>
-                                    <div class="shape-team"></div>
+                                   
                                 </div>
+                                <div class="shape-team"></div>
                             </div>
                             <h3 class="name-member">maverick</h3>
                             <h4 class="job">Manager</h4>
@@ -770,8 +778,9 @@
                                             <a href="youtube.com"><i class="icon-youtube"></i></a>
                                         </li>
                                     </ul>
-                                    <div class="shape-team"></div>
+                                    
                                 </div>
+                                <div class="shape-team"></div>
                             </div>
                             <h3 class="name-member">Jessica nguyen</h3>
                             <h4 class="job">Coach</h4>
@@ -793,8 +802,9 @@
                                             <a href="youtube.com"><i class="icon-youtube"></i></a>
                                         </li>
                                     </ul>
-                                    <div class="shape-team"></div>
+                                  
                                 </div>
+                                <div class="shape-team"></div>
                             </div>
                             <h3 class="name-member">jenifer nolan</h3>
                             <h4 class="job">Co - Founder Zunzo</h4>
@@ -986,10 +996,6 @@
         <i class="icon-ctrl"></i>
     </a>
 
-     <!-- cusor -->
-     <div class="tf-mouse tf-mouse-outer"></div>
-     <div class="tf-mouse tf-mouse-inner"></div>
-     
     <!-- Modal-login -->
     <div class="modal fade modal-login" id="exampleModalToggle" aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel" tabindex="-1">
