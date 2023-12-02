@@ -1871,18 +1871,6 @@ select.tb-my-input {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-.benefit-item-v2:hover::after {
-    height: 100% !important;
-	z-index: -1;
-}
-
-.benefit-item-v2:hover .benefit-number span.number,
-.benefit-item-v2:hover .title-benefit,
-.benefit-item-v2:hover .description-benefit {
-	color: var(--black);
-
-}
-
 
 .benefit-v2 {
 	--bs-gutter-x: 1.5rem;
@@ -3175,6 +3163,11 @@ span.countdown__value {
 }
 .dot-content .dot:hover {
     background-color: var(--primary);
+}
+.dot-content .tf-dot-active .content {
+    margin-top: 35px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 .pack-1 {
     position: absolute;

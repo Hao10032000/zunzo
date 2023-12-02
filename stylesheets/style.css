@@ -673,15 +673,14 @@ input[type="color"],
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	opacity: 0;
 	filter: alpha(opacity=0);
-	top: -60px;
-	max-width: 1920px;
+	top: -100%;
 	margin: 0 auto;
 	z-index: 999999;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 #header.upscrolled {
@@ -770,7 +769,7 @@ input[type="color"],
 }
 .search-form-inner .select-category {
     background: var(--black);
-    color: #fff;
+    color: var(--white);
 }
 .search-form-inner label {
     width: calc(100% - 180px - 114px);
@@ -783,7 +782,15 @@ input[type="color"],
 
 }
 .search-form-inner #product_cat {
-    border-radius: unset;
+    cursor: pointer;
+}
+.products-search input[type="search"]{
+	height: 48px;
+    padding: 0px 16px;
+	border-bottom: 1px solid #E9E9E9;
+    border-top: 1px solid #E9E9E9;
+    border-left: 0;
+    border-right: 0;
 }
 .search-form-inner button {
     width: 114px;
@@ -792,7 +799,7 @@ input[type="color"],
     justify-content: center;
     align-items: center;
     background-color: var(--black);
-    color: #fff;
+    color: var(--white);
     border-radius: 0 4px 4px 0px;
 	cursor: pointer;
 }
@@ -801,15 +808,17 @@ input[type="color"],
     color: var(--black);
 }
 select#product_cat {
-    color: #fff;
+    color: var(--white);
     font-family: 'Jost';
     font-size: 16px;
     font-weight: 600;
     line-height: 26px;
     text-transform: capitalize;
     width: 180px;
-    border-radius: 4px;
-	background-color: #000;
+	background-color: var(--black);
+	height: 48px;
+	padding: 0px 16px !important;
+	border-radius: 4px 0 0 4px !important;
 }
 .header-v2 .header-ct-right .show-login,
 .header-v2 .header-ct-right .wishlist-wrapper,
@@ -817,7 +826,7 @@ select#product_cat {
     text-align: center;
 }
 .header-v2 .header-ct-right span.shopping-cart-items-count {
-    background: #000;
+    background: var(--black);
     position: absolute;
     top: 24px;
     right: -2px;
@@ -825,12 +834,12 @@ select#product_cat {
     line-height: 9px;
     font-size: 11px;
     font-weight: 400;
-    color: #fff;
+    color: var(--white);
     padding: 4px 6px;
     border-radius: 50px;
 }
 .header-v2 .header-bottom {
-    background-color: #000;
+    background-color: var(--black);
 }
 .header-bottom-inner .header-ct-right {
     justify-content: flex-end;
@@ -841,7 +850,7 @@ select#product_cat {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
-    color: #fff;
+    color: var(--white);
 }
 .header-bottom-inner .infor-phone .phone {
     font-family: 'Jost';
@@ -913,7 +922,7 @@ select#product_cat {
     left: 0;
     width: 100%;
     z-index: 99;
-    background: #fff;
+    background: var(--white);
     border: 1px solid #ebebeb;
     width: calc(100%);
     list-style: none;
@@ -1102,6 +1111,7 @@ ul.submenu li:hover {
     width: 100%;
     max-width: 330px;
     height: 100%;
+	overflow: scroll;
     background-color: var(--black);
     position: fixed;
     z-index: 1000000;
@@ -1124,8 +1134,6 @@ ul.submenu li:hover {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	height: 100%;
-	overflow: auto;
 }
 
 #mainnav-mobi ul li {
@@ -1391,13 +1399,13 @@ ul.submenu li:hover {
 	font-size: 18px;
 	padding: 5px 0;
 	font-weight: 400;
-	color: var(--white);
+	color: var(--white) !important;
 	display: block;
 	line-height: 28px;
 }
 
 .breadcrumbs a:hover {
-	color: var(--secondary-one);
+	color: var(--secondary-one) !important;
 }
 
 /* Blog
@@ -2147,6 +2155,8 @@ span.pull-right {
 	top: 60px;
 	z-index: 999999;
 	width: 250px;
+	left: -220px;
+
 	display: none;
 }
 
@@ -2157,8 +2167,9 @@ span.pull-right {
 .search a.active-search:before {
 	font-family: 'icomoon';
 	content: "\ea0f";
-	font-size: 20px;
-	color: #fff;
+	font-size: 14px;
+    padding: 3px;
+	color: var(--white);
 }
 
 /* widget latest posts */

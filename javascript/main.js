@@ -111,7 +111,7 @@
                     injectSpace.insertAfter(nav);
                 }
                 $(window).on('load scroll', function () {
-                    if ($(window).scrollTop() > hd_height + 30) {
+                    if ($(window).scrollTop() > hd_height + offsetTop) {
                         $('#header').addClass('downscrolled');
                         injectSpace.show();
                     } else {
@@ -339,8 +339,8 @@
         var retina = window.devicePixelRatio > 1 ? true : false;
 
         if (retina) {
-            $('#a2').attr({ src: 'images/Logo2@.png', width: '190', height: '42' });
-            $('#a3').attr({ src: 'images/Logo-v2@.png', width: '124', height: '42' });
+            $('#a2').attr({ src: 'images/logo2@.png', width: '190', height: '42' });
+            $('#a3').attr({ src: 'images/logo-v2@.png', width: '124', height: '42' });
             $('#a1').attr({ src: 'images/logo-footer2@.png', width: '125', height: '43' });
 
         }
@@ -361,20 +361,33 @@
     };
 
     //Counter Number
-    const counters = document.querySelectorAll(".numb-count");
-    counters.forEach((counter) => {
-        counter.innerText = "0";
-        const updateCounter = () => {
-            const target = +counter.getAttribute("data-to");
-            const count = +counter.innerText;
-            const increment = target / 200;
-            if (count < target) {
-                counter.innerText = `${Math.ceil(count + increment)}`;
-                setTimeout(updateCounter, 1);
-            } else counter.innerText = target;
-        };
-        updateCounter();
-    });
+    var detectViewport = function() {
+        $('[data-waypoint-active="yes"]').waypoint(function() {
+            $(this).trigger('on-appear');
+        }, { offset: '90%', triggerOnce: true });
+
+        $(window).on('load', function() {
+            setTimeout(function() {
+                $.waypoints('refresh');
+            }, 100);
+        });
+    };
+
+    var counter = function() {
+        $('.flat-counter').on('on-appear', function() {            
+            $(this).find('.numb-count').each(function() { 
+                var to = parseInt( ($(this).attr('data-to')),10 ), speed = parseInt( ($(this).attr('data-speed')),10 );
+                console.log(speed);
+                if ( $().countTo ) {
+                    $(this).countTo({
+                        to: to,
+                        speed: speed
+                    });
+                }
+            });
+       });
+    };
+       
     // Dom Ready
     $(function () {
         if (matchMedia('only screen and (min-width: 991px)').matches) {
@@ -385,6 +398,8 @@
         retinaLogos();
         topSearch();
         video();
+        detectViewport();
+        counter();
         preloader();
     });
 
