@@ -1,27 +1,40 @@
 /**  
   * Button
+  * slider
   * title-box
-  * Title section
-  * Flat divider
-  * Class for visualcomposer
-  * Icon-Box
-  * Row
-  * flat-counter
-  * Flat Tabs
-  * flat Portfolio
-  * pricing-table
-  * Team member
-  * Appointment
-  * Testimonials 
-  * Latest-blog
-  * video-controls
-  * flat-contact-form
-  * flat-progress-square
-  * Callout Us
-  * Simple slider
-  * flat-about-box
-  * flat-Preloader
-*/
+  * paralax event
+  * banner-paralax
+  * team member
+  * event
+  * event v2 white
+  * slide image logo
+  * about us
+  * Benefits
+  * widget course
+  * widget Testimonial
+  * Widget Resgister
+  * graphic
+  * graphic home 3
+  * About us v2
+  * Image carousel
+  * widget benefit v2
+  * Widget product
+  * Widget testimonial-v2
+  * idget Form Contact
+  * Widget Mission 
+  * Contact us page
+  * Slide Product v2
+  * Category product
+  * Product Tab
+  * Our Collection
+  * Pack Products
+  * Widget blog-v3
+  * Widget benefit v3
+  * Widget IG
+  * Our-blog
+  * Map
+**/
+  
 :root {
 	--white: #ffffff;
 	--primary: #C3E92D;
@@ -430,6 +443,7 @@ p.flat-description-slider {
 }
 
 /* title-box */
+
 /* title-box-v2 */
 
 .title-box-v2 .sub-title {
@@ -450,6 +464,7 @@ p.flat-description-slider {
 }
 
 /* title-boxv2 */
+
 /* paralax event */
 .tf-widget-event {
 	background-image: url("../images/parallax/paralax1.jpg");
@@ -510,6 +525,7 @@ p.flat-description-slider {
 }
 
 /* banner-paralax */
+
 /* team member */
 .team-item .team-image {
 	position: relative;
@@ -981,6 +997,7 @@ p.flat-description-slider {
 }
 
 /* event 
+
 /* event v2 white */
 .event-white-wiget .event-infomation .info h4,
 .event-white-wiget .event-infomation .info p,
@@ -1046,6 +1063,7 @@ p.flat-description-slider {
 }
 
 /* event v2 white */
+
 /* slide image logo */
 .widget-event h4 > a {
     color: var(--white);
@@ -1830,17 +1848,20 @@ select.tb-my-input {
 }
 
 /* Image carousel */
+
+
+/* widget benefit v2 */
 .benefit-v2 .benefit-item-v2 {
 	text-align: center;
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	padding: 32px 25px;
 }
-
-/* widget benefit v2 */
 .tf-widget-benefit-v2 {
 	padding: 112px 0;
 }
-
+.benefit-v2 .benefit-item-v2:hover {
+    box-shadow: 0px 0px 20px 0px #c3e92d2e;
+}
 .line-benefit {
 	margin: 18px 0;
 	width: 120px;
@@ -1972,9 +1993,6 @@ select.tb-my-input {
 	margin-top: 16px;
 }
 
-/* .tf-testimonial-content-v2 .content .description {
-    margin-right: -13px;
-} */
 .tf-testimonial-content-v2 .content .info .name {
 	color: var(--white);
 	text-transform: capitalize;

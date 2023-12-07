@@ -12,10 +12,14 @@
   * topSearch
   * toogle cart
   * Sidebar menu
-  * Time Counter
-  * counter
-  * swClick
-  * flatAnimation
+  * menu Mobie Style 02
+  * timerInterval
+  * slide
+  * imgae slide about
+  * testimonial
+  * slide product
+  * logo partner
+  * slide product
   * goTop
   * retinaLogos
   * video
@@ -94,41 +98,35 @@
 
     var headerFixed = function () {
         if ($('body').hasClass('header-sticky')) {
-            var hd_height = $('#header').height();
-            var nav = $("#header");
+            var nav = $('#header');
 
             if (nav.length) {
-                var offsetTop = nav.offset().top,
+                var
+                    offsetTop = nav.offset().top,
                     headerHeight = nav.height(),
-                    injectSpace = $("<div>", {
-                        height: headerHeight,
-                    });
-                injectSpace.hide();
+                    injectSpace = $('<div />', {
+                        height: headerHeight
+                    }).insertAfter(nav);
 
-                if ($("header").hasClass("style-absolute")) {
-                    injectSpace.hide();
-                } else {
-                    injectSpace.insertAfter(nav);
-                }
                 $(window).on('load scroll', function () {
-                    if ($(window).scrollTop() > hd_height + offsetTop) {
-                        $('#header').addClass('downscrolled');
+                    if ($(window).scrollTop() > offsetTop) {
+                        nav.addClass('downscrolled');
                         injectSpace.show();
                     } else {
-                        $('#header').removeClass('downscrolled');
+                        nav.removeClass('downscrolled');
                         injectSpace.hide();
                     }
-                    if ($(window).scrollTop() > 300) {
-                        $('#header').addClass('upscrolled');
+
+                    if ($(window).scrollTop() > 500) {
+                        nav.addClass('upscrolled');
                     } else {
-                        $('#header').removeClass('upscrolled');
+                        nav.removeClass('upscrolled');
                     }
                 })
             }
-
         }
+    };
 
-    }
     var topSearch = function () {
 
         $(document).on('click', function (e) {
@@ -204,8 +202,9 @@
             $(this).addClass("active");
         }
     });
+    //Sidebar menu
 
-
+    //Menu Mobie Style 02
     $('.line-1').on('click', function () {
         $(this).closest('.header-v2').find('.canvas-nav-wrap').toggleClass('active');
         $(this).closest('.header-v2').find('.overlay-canvas-nav').toggleClass('active');
@@ -213,10 +212,10 @@
     $('.overlay-canvas-nav').on('click', function () {
         $(this).closest('.header-v2').find('.canvas-nav-wrap').toggleClass('active');
         $(this).closest('.header-v2').find('.overlay-canvas-nav').toggleClass('active');
-    });
+    });//Menu Mobie Style 02
 
 
-    //Time
+    //timerInterval
     var timeMinutes = 10;
     var timeSeconds = timeMinutes * 60;
     var timer = document.getElementById('timer-sell-out');
@@ -241,8 +240,9 @@
     }
 
     var timerInterval = setInterval(startTimer, 1000);
-    //time
+    //timerInterval
 
+    //Slide
     var swiper = new Swiper(".mySwiper", {
         effect: "fade",
         pagination: {
@@ -250,27 +250,42 @@
             clickable: true,
             dynamicBullets: true,
         },
-    });
+    });//Slide
 
+    //Imgae Slide about
     var swiper3 = new Swiper(".image-carousel", {
         slidesPerView: 3,
         spaceBetween: 32,
         loop: true,
-    });
+    });//Imgae Slide about
+
+    //Testimonial
     var swiper4 = new Swiper(".testimonial-wrap-v2", {
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
     });
+    $('.swiper-testimonial').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 1,
+        autoplay: true,
+        dots: false,
+    })
+    //Testimonial
+
+   //slide product
     var swiper5 = new Swiper(".tf-slider-product", {
         effect: "fade",
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
-    });
+    });//slide product
 
+    //logo partner
     $('.sologan-logo').owlCarousel({
         loop: true,
         margin: 80,
@@ -288,7 +303,9 @@
                 items: 6
             }
         }
-    });
+    });//logo partner
+
+    //slide product
     $('.owl-themes').owlCarousel({
         loop: true,
         margin: 30,
@@ -309,17 +326,9 @@
                 items: 2
             }
         }
-    })
-    $('.swiper-testimonial').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        items: 1,
-        autoplay: true,
-        dots: false,
-    })
+    })//slide product
 
-
+    //goTop
     var goTop = function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 800) {
@@ -333,8 +342,9 @@
             $("html, body").animate({ scrollTop: 0 }, 1000);
             return false;
         });
-    };
+    }; //goTop
 
+    //retinaLogos
     var retinaLogos = function () {
         var retina = window.devicePixelRatio > 1 ? true : false;
 
@@ -344,50 +354,54 @@
             $('#a1').attr({ src: 'images/logo-footer2@.png', width: '125', height: '43' });
 
         }
-    };
+    };//retinaLogos
+
+    //video
     var video = function () {
         if ($('div').hasClass('benefit-video')) {
             $('.popup-youtube').magnificPopup({
                 type: 'iframe'
             });
         }
-    };
+    };//video
+    
+    //preloader
     var preloader = function () {
         setTimeout(function () {
             $(".preload-container").fadeOut("slow", function () {
                 $(this).remove();
             });
         }, 1000);
-    };
+    };//preloader
 
     //Counter Number
-    var detectViewport = function() {
-        $('[data-waypoint-active="yes"]').waypoint(function() {
+    var detectViewport = function () {
+        $('[data-waypoint-active="yes"]').waypoint(function () {
             $(this).trigger('on-appear');
         }, { offset: '90%', triggerOnce: true });
 
-        $(window).on('load', function() {
-            setTimeout(function() {
+        $(window).on('load', function () {
+            setTimeout(function () {
                 $.waypoints('refresh');
             }, 100);
         });
     };
 
-    var counter = function() {
-        $('.flat-counter').on('on-appear', function() {            
-            $(this).find('.numb-count').each(function() { 
-                var to = parseInt( ($(this).attr('data-to')),10 ), speed = parseInt( ($(this).attr('data-speed')),10 );
+    var counter = function () {
+        $('.flat-counter').on('on-appear', function () {
+            $(this).find('.numb-count').each(function () {
+                var to = parseInt(($(this).attr('data-to')), 10), speed = parseInt(($(this).attr('data-speed')), 10);
                 console.log(speed);
-                if ( $().countTo ) {
+                if ($().countTo) {
                     $(this).countTo({
                         to: to,
                         speed: speed
                     });
                 }
             });
-       });
-    };
-       
+        });
+    };//Counter Number
+
     // Dom Ready
     $(function () {
         if (matchMedia('only screen and (min-width: 991px)').matches) {
