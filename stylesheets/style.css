@@ -672,19 +672,6 @@ input[type="color"],
 
 /* Header Fix */
 #header.downscrolled {
-	top: 0;
-	width: 100%;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	opacity: 0;
-	filter: alpha(opacity=0);
-	top: -100%;
-	margin: 0 auto;
-	z-index: 999999;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease; */
 	position: fixed;
     left: 0;
     top: 0;
@@ -2268,14 +2255,14 @@ span.pull-right {
 	margin-bottom: 20px;
 }
 
-.widget-form-subscribe input#mail {
-	height: 50px;
-	width: 100%;
-	text-align: center;
-	padding: 12px;
-	border: 0;
-	background-color: var(--white);
-	margin-bottom: 16px;
+input#email-sb {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border: 0;
+    background-color: var(--white);
+    margin-bottom: 16px;
 }
 
 .widget-form-subscribe input[type="submit"] {

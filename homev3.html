@@ -63,7 +63,7 @@
 <body class="header-sticky">
     <!-- preload -->
     <div class="preload preload-container">
-        <div class="swapping-squares-spinner" :style="spinnerStyle">
+        <div class="swapping-squares-spinner">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -539,8 +539,8 @@
                         </nav><!-- #mainnav_canvas -->
                     </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <nav id="mainnav_canvas" class="mainnav_canvas" role="navigation">
-                            <ul id="menu-main-nav-1" class="menu">
+                        <nav id="mainnav_canvas2" class="mainnav_canvas2" role="navigation">
+                            <ul id="menu-main-nav-2" class="menu">
                                 <li class="menu-item menu-item-has-children-mobile">
                                     <a href="#">Men’s Clothing</a>
                                     <span class="btn-submenu"></span>
@@ -810,16 +810,19 @@
             <div class="tf-product-tab">
                 <div class="tab-wrap-product title-small">
                     <h2 class="title-section wow fadeInUp animated">Our Products</h2>
-                <ul class="nav nav-tabs justify-content-end tab-our-product" id="myTab2" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="home-tab2" data-bs-toggle="tab" data-bs-target="#home2" type="button" role="tab" aria-controls="home" aria-selected="true">New Arrivals</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="profile-tab2" data-bs-toggle="tab" data-bs-target="#profile2" type="button" role="tab" aria-controls="profile" aria-selected="false">Best sellers</button>
-                    </li>
-                </ul>
+                    <ul class="nav nav-tabs justify-content-end tab-our-product" id="myTab2" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab2" data-bs-toggle="tab" data-bs-target="#home2"
+                                type="button" role="tab" aria-controls="home" aria-selected="true">New Arrivals</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab2" data-bs-toggle="tab" data-bs-target="#profile2"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Best
+                                sellers</button>
+                        </li>
+                    </ul>
                 </div>
-                <div class="tab-content" id="myTabContent">
+                <div class="tab-content" id="myTabContents">
                     <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab2">
                         <div class="widget-our-product">
                             <div class="our-product-item wow fadeInUp animated" data-wow-delay="0.1s">
@@ -1712,7 +1715,7 @@
                                 </div>
                             </div>
                         </div>
-                </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2423,7 +2426,7 @@
                     <div class="minicar-body">
                         <div class="time">
                             <img src="images/retinal/fire.png" alt="">
-                            <p>Your cart will expire in <span id="timer-sell-out">04:48</span>
+                            <p>Your cart will expire in <span id="timer-sell-outs">04:48</span>
                                 minutes!
                                 Please checkout now
                                 before your items sell
@@ -2573,8 +2576,8 @@
     </a>
 
     <!-- Modal-login -->
-    <div class="modal fade modal-login" id="exampleModalToggle" aria-hidden="true"
-        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal fade modal-login" id="exampleModalToggle" aria-hidden="true" aria-label="exampleModalToggleLabel"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2611,7 +2614,7 @@
         </div>
     </div>
     <div class="modal fade modal-login" id="exampleModalToggle2" aria-hidden="true"
-        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        aria-label="exampleModalToggleLabel2" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2623,15 +2626,15 @@
                         <div class="container">
                             <div class="form-group">
                                 <label for="username">User Name:</label>
-                                <input type="text" name="username" id="username" placeholder="User name" required="">
+                                <input type="text" name="username" id="usernames" placeholder="User name" required="">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email:</label>
-                                <input type="email" name="email" id="email" placeholder="Email " required="">
+                                <input type="email" name="email" id="email-modal" placeholder="Email " required="">
                             </div>
                             <div class="form-group">
                                 <label for="password">Password:</label>
-                                <input type="password" name="password" id="password" placeholder="Your passsword"
+                                <input type="password" name="password" id="passwords" placeholder="Your passsword"
                                     required="">
                             </div>
                             <div class="form-group">
@@ -2652,7 +2655,7 @@
         </div>
     </div>
     <div class="modal fade modal-login" id="exampleModalToggle3" aria-hidden="true"
-        aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+        aria-label="exampleModalToggleLabel3" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

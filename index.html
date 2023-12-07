@@ -63,7 +63,7 @@
 <body class="header-sticky">
     <!-- preload -->
     <div class="preload preload-container">
-        <div class="swapping-squares-spinner" :style="spinnerStyle">
+        <div class="swapping-squares-spinner">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -111,7 +111,7 @@
                     <nav id="mainnav" class="mainnav">
                         <div id="logo-mobie" class="logo">
                             <a href="index.html" rel="home">
-                                <img id="a2" src="images/logo.png" alt="image">
+                                <img src="images/logo.png" alt="image">
                             </a>
                         </div><!-- /.logo -->
                         <ul class="menu">
@@ -953,12 +953,6 @@
                                                             d="M8.25 8.07812C8.25 8.28523 8.08211 8.45312 7.875 8.45312C7.66789 8.45312 7.5 8.28523 7.5 8.07812C7.5 7.87102 7.66789 7.70312 7.875 7.70312C8.08211 7.70312 8.25 7.87102 8.25 8.07812Z"
                                                             stroke="#121212" stroke-width="1.5" />
                                                     </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_6710_2624">
-                                                            <rect width="24" height="24" fill="white"
-                                                                transform="translate(0 0.203125)" />
-                                                        </clipPath>
-                                                    </defs>
                                                 </svg>
                                                 Training Programs
                                             </a>
@@ -975,12 +969,7 @@
                                                             stroke="#121212" stroke-width="1.5" stroke-linecap="round"
                                                             stroke-linejoin="round" />
                                                     </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_6710_2620">
-                                                            <rect width="24" height="24" fill="white"
-                                                                transform="translate(0 0.203125)" />
-                                                        </clipPath>
-                                                    </defs>
+                                                   
                                                 </svg>
                                                 2 comments
                                             </a>
@@ -1018,12 +1007,6 @@
                                                             d="M8.25 8.07812C8.25 8.28523 8.08211 8.45312 7.875 8.45312C7.66789 8.45312 7.5 8.28523 7.5 8.07812C7.5 7.87102 7.66789 7.70312 7.875 7.70312C8.08211 7.70312 8.25 7.87102 8.25 8.07812Z"
                                                             stroke="#121212" stroke-width="1.5" />
                                                     </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_6710_2624">
-                                                            <rect width="24" height="24" fill="white"
-                                                                transform="translate(0 0.203125)" />
-                                                        </clipPath>
-                                                    </defs>
                                                 </svg>
                                                 Running Events
                                             </a>
@@ -1040,12 +1023,6 @@
                                                             stroke="#121212" stroke-width="1.5" stroke-linecap="round"
                                                             stroke-linejoin="round" />
                                                     </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_6710_2620">
-                                                            <rect width="24" height="24" fill="white"
-                                                                transform="translate(0 0.203125)" />
-                                                        </clipPath>
-                                                    </defs>
                                                 </svg>
                                                 09 comments
                                             </a>
@@ -1668,7 +1645,7 @@
                             <p><i class="icon-MapPin"></i>710 1st St. Easton, PA 18042 | Chester County</p>
                             <form action="#">
                                 <div class="input-new-letter">
-                                    <input class="btn-email" name="email" id="email" type="email"
+                                    <input class="btn-email" name="email" id="emails" type="email"
                                         placeholder="Your email address" required>
                                     <button class="btn-submit" type="submit"><i class="icon-uniE925"></i></button>
                                 </div>
@@ -1702,7 +1679,7 @@
     </a>
     <!-- Modal-login -->
     <div class="modal fade modal-login" id="exampleModalToggle" aria-hidden="true"
-        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        aria-label="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1739,7 +1716,7 @@
         </div>
     </div>
     <div class="modal fade modal-login" id="exampleModalToggle2" aria-hidden="true"
-        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        aria-label="exampleModalToggleLabel2" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1751,15 +1728,15 @@
                         <div class="container">
                             <div class="form-group">
                                 <label for="username">User Name:</label>
-                                <input type="text" name="username" id="username" placeholder="User name" required="">
+                                <input type="text" name="username" id="usernames" placeholder="User name" required="">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email:</label>
-                                <input type="email" name="email" id="email" placeholder="Email " required="">
+                                <input type="email" name="email" id="email-modal" placeholder="Email " required="">
                             </div>
                             <div class="form-group">
                                 <label for="password">Password:</label>
-                                <input type="password" name="password" id="password" placeholder="Your passsword"
+                                <input type="password" name="password" id="passwords" placeholder="Your passsword"
                                     required="">
                             </div>
                             <div class="form-group">
@@ -1780,7 +1757,7 @@
         </div>
     </div>
     <div class="modal fade modal-login" id="exampleModalToggle3" aria-hidden="true"
-        aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+        aria-label="exampleModalToggleLabel3" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
