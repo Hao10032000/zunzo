@@ -20,7 +20,7 @@
   * widget benefit v2
   * Widget product
   * Widget testimonial-v2
-  * idget Form Contact
+  * Widget Form Contact
   * Widget Mission 
   * Contact us page
   * Slide Product v2
@@ -1343,6 +1343,7 @@ p.flat-description-slider {
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
 	display: inline-block;
+	color: var(--black);
 	top: 24px;
 	left: 24px;
 	z-index: 2;
@@ -1855,12 +1856,13 @@ select.tb-my-input {
 	text-align: center;
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	padding: 32px 25px;
+	transition: all 0.5s;
 }
 .tf-widget-benefit-v2 {
 	padding: 112px 0;
 }
 .benefit-v2 .benefit-item-v2:hover {
-    box-shadow: 0px 0px 20px 0px #c3e92d2e;
+	margin-top: -10px;
 }
 .line-benefit {
 	margin: 18px 0;
@@ -2102,6 +2104,26 @@ select.tb-my-input {
 /* Widget testimonial-v2 */
 
 /* Widget Form Contact */
+.sex-container {
+    position: relative;
+    display: inline-block;
+}
+.sex-container:after {
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    rotate: 90deg;
+    height: 100%;
+    font-size: 80%;
+    padding: 12px 7px;
+    color: #000;
+    pointer-events: none;
+    font-family: "icomoon";
+    content: "\e900";
+}
+select#sexs {
+    -webkit-appearance: none;
+}
 .tf-widget-form-contact {
 	position: relative;
 }

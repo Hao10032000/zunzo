@@ -104,7 +104,7 @@
                 var
                     offsetTop = nav.offset().top,
                     headerHeight = nav.height(),
-                    injectSpace = $('<div />', {
+                    injectSpace = $('', {
                         height: headerHeight
                     }).insertAfter(nav);
 
@@ -276,7 +276,7 @@
     })
     //Testimonial
 
-   //slide product
+    //slide product
     var swiper5 = new Swiper(".tf-slider-product", {
         effect: "fade",
         pagination: {
@@ -364,7 +364,7 @@
             });
         }
     };//video
-    
+
     //preloader
     var preloader = function () {
         setTimeout(function () {
