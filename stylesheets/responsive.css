@@ -606,7 +606,13 @@
 	}
 
 }
-
+/* Smaller than standard 992 */
+@media only screen and (max-width: 895px) {
+	.flat-title-slider {
+		font-size: 40px;
+		line-height: 55px;
+	}
+}
 /* Tablet Landscape */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 	.flat-socials li:not(:last-child) {
@@ -637,6 +643,9 @@
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
+	.tf-banner {
+		height: 1200px !important;
+	}
 	.pd-l-banner {
 		padding-left: 12px;
 	}
